@@ -1,0 +1,96 @@
+.growth-insta {
+    padding: 150px 0 60px 0;
+    &__box {
+        width: 56.5%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    &__statistics {
+        p {
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-family: HelveticaNeueCyrMedium, sans-serif;
+            color: #343434;
+            font-size: 34.5px
+        }
+    }
+
+    .growth-insta__list {
+        margin: 0;
+        padding: 0;
+        li  {
+            list-style-type: none;
+            margin-bottom: 130px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .growth-insta__description {
+        display: inline;
+    }
+
+    .growth-insta__pretext {
+        font-size: 44px;
+        display: inline;
+    }
+
+    .growth-insta__value {
+        font-size: 90px;
+        display: inline;
+    }
+
+    &__view {
+        max-width: 330px;
+        img {
+            display: inline-block;
+            width: 100%;
+            height: auto;
+            border-style: solid;
+            border-width: 112px 81px 122px 33px;
+            -webkit-border-image: url(../images/cases/window-mobile.png) 112 81 122 33 fill stretch;
+            -o-border-image: url(../images/cases/window-mobile.png) 112 81 122 33 fill stretch;
+            border-image: url(../images/cases/window-mobile.png) 112 81 122 33 fill stretch;
+        }
+    }
+}
+
+@media all and (max-width: 1800px) {
+    .growth-insta {
+        padding-top: 85px;
+        padding-bottom: 0;
+        &__box {
+            width: 81%;
+        }
+        p {
+            margin-bottom: 10px;
+            font-size: 23px;
+        }
+        .growth-insta__list {
+            li {
+                margin-bottom: 88px;
+            }
+        }
+        .growth-insta__value {
+            font-size: 70px;
+        }
+        .growth-insta__pretext {
+            font-size: 32px;
+        }
+        .growth-insta__description {
+            font-size: 23px;
+        }
+        .growth-insta__description-es {
+            margin-top: 7px;
+            font-size: 14px;
+        }
+        &__view {
+            max-width: 252px;
+            img {
+                height: auto;
+                border-width: 91px 75px 92px 25px;
+            }
+        }
+    }
+}

@@ -1,0 +1,167 @@
+.case-advertising-result {
+    position: relative;
+    .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    &__bg {
+        width: 100%;
+    }
+    h2 {
+        margin: 0 0 0 0;
+        font-family: HelveticaNeueCyrBold, sans-serif;
+        font-size: 61px;
+        color: #343434;
+        line-height: 1.1;
+    }
+    .case-advertising-result__list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+    .case-advertising-result__pretext {
+        margin: 0 0 2px 0;
+        font-family: HelveticaNeueCyrMedium, sans-serif;
+        font-size: 32px;
+        color: #343434;
+    }
+    .case-advertising-result__value {
+        margin: 0 0 2px 0;
+        font-family: HelveticaNeueCyrMedium, sans-serif;
+        font-size: 70px;
+        color: #343434;
+    }
+    .case-advertising-result__description {
+        margin: 0 0 0 0;
+        font-family: HelveticaNeueCyrMedium, sans-serif;
+        font-size: 23px;
+        line-height: 1.2;
+        color: #343434;
+    }
+    &_zhukovka {
+        padding: 0;
+        background-size: auto;
+        h2 {
+            margin-top: 60px;
+            margin-bottom: 42px;
+        }
+        .case-advertising-result__list {
+            max-width: 480px;
+            li {
+                color: #343434;
+                margin: 0 0 55px 0;
+            }
+        }
+    }
+
+    &_pichugovo {
+        h2 {
+            margin-top: 60px;
+            margin-bottom: 50px;
+        }
+        .case-advertising-result__list {
+            max-width: 62%;
+            li {
+                color: #343434;
+                margin: 0 0 62px 0;
+            }
+        }
+        .case-advertising-result__pretext {
+            display: inline;
+        }
+        .case-advertising-result__value {
+            display: inline;
+        }
+    }
+
+    &_biovestin {
+        padding-bottom: 95px;
+        h2 {
+            margin-top: 93px;
+            font-size: 80px;
+            margin-bottom: 50px;
+        }
+        .case-advertising-result__row {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            margin: 0 0 85px 0;
+            div {
+                &:first-child {
+                    width: 460px;
+                }
+                &:last-child {
+                    width: 485px;
+                }
+            }
+        }
+        .case-advertising-result__pretext {
+            display: inline;
+            font-size: 48px;
+        }
+        .case-advertising-result__value {
+            display: inline;
+            font-size: 95px;
+            line-height: 1;
+        }
+        .case-advertising-result__description {
+            font-size: 35px;
+        }
+        .case-advertising-result__description-es {
+            margin: 16px 0 0 0;
+            font-family: HelveticaNeueCyrMedium, sans-serif;
+            font-size: 16px;
+            color: #aaaaaa;
+        }
+    }
+}
+
+
+@media all and (max-width: 1800px) {
+    .case-advertising-result {
+        &_zhukovka {
+            padding-bottom: 0;
+            h2 {
+                margin-top: 60px;
+            }
+        }
+        &_pichugovo {
+            padding-bottom: 0;
+            h2 {
+                margin-top: 60px;
+            }
+        }
+        &_biovestin {
+            padding-bottom: 0;
+            h2 {
+                margin-top: 70px;
+                font-size: 61px;
+            }
+            .case-advertising-result__row {
+                width: 84%;
+                div {
+                    &:first-child {
+                        width: 325px;
+                    }
+                }
+            }
+            .case-advertising-result__value {
+                font-size: 70px;
+            }
+            .case-advertising-result__pretext {
+                font-size: 32px;
+            }
+            .case-advertising-result__description {
+                font-size: 23px;
+            }
+            .case-advertising-result__description-es {
+                margin-top: 7px;
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.informing-za {
+  margin-bottom: 150px;
+  &__title {
+    margin: 0 0 54px 0;
+    font-family: HelveticaNeueCyrMedium, sans-serif;
+    font-size: 34px;
+    color: #343434;
+  }
+  p {
+    width: 50%;
+    margin: 0 0 35px 0;
+    font-family: HelveticaNeueCyrRoman, sans-serif;
+    font-size: 24px;
+    color: #343434;
+    line-height: 1.5;
+  }
+  .informing-za__banners-text {
+    margin-bottom: 138px;
+    font-size: 25.5px;
+    line-height: 1.4;
+  }
+  &__banners {
+    max-width: 53%;
+    margin: 0 auto 95px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  &__pc {
+    width: 58%;
+    max-width: 1013px;
+    margin: 0 auto 124px auto;
+    display: block;
+    border-style: solid;
+    border-width: 44px 160px 90px 160px;
+    -moz-border-image: url(../images/cases/pc-window-1093md.png) 33 130 74 130 stretch;
+    -webkit-border-image: url(../images/cases/pc-window-1093md.png) 33 130 74 130 stretch;
+    -o-border-image: url(../images/cases/pc-window-1093md.png) 33 130 74 130 stretch;
+    border-image: url(../images/cases/pc-window-1093md.png) 33 130 74 130 fill stretch;
+  }
+
+  &__mobile-row {
+    max-width: 55%;
+    margin: 0 auto 50px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    div {
+      max-width: 330px;
+    }
+    img {
+      display: inline-block;
+      width: 100%;
+      height: auto;
+      border-style: solid;
+      border-width: 112px 81px 122px 33px;
+      -webkit-border-image: url(../images/cases/window-mobile.png) 112 81 122 33 fill stretch;
+      -o-border-image: url(../images/cases/window-mobile.png) 112 81 122 33 fill stretch;
+      border-image: url(../images/cases/window-mobile.png) 112 81 122 33 fill stretch;
+    }
+  }
+  .informing-za__text-za {
+    margin-bottom: 70px;
+  }
+}
+
+@media all and (max-width: 1800px) {
+  .informing-za {
+    margin-bottom: 80px;
+    p {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+    &__title {
+      margin-bottom: 33px;
+      font-size: 23px;
+    }
+    &__banners {
+      margin-bottom: 120px;
+      max-width: 75%;
+    }
+    .informing-za__banners-text {
+      margin-bottom: 71px;
+      font-size: 18px;
+    }
+    .informing-za__text-za {
+      width: 70%;
+    }
+    &__pc {
+      max-width: 960px;
+      width: 75%;
+      border-width: 43px 145px 82px 138px;
+      margin-bottom: 155px;
+    }
+    &__mobile-row {
+      //width: 90%;
+      margin-top: 60px;
+      max-width: 75%;
+      div {
+        max-width: 278px;
+      }
+      img {
+        max-width: 278px;
+        border-width: 91px 77px 112px 27px;
+      }
+    }
+  }
+}

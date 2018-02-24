@@ -1,0 +1,45 @@
+.other-projects {
+  padding: 132px 0 122px 0;
+  h3 {
+    font-family: HelveticaNeueCyrBold, sans-serif;
+    font-size: 40px;
+    color: #404040;
+    text-align: center;
+    margin: 0 0 42px 0;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    //width: 48%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 0 15px;
+    margin: 0 5px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE 6-9 */
+    &:hover {
+      cursor: pointer;
+      filter: none;
+    }
+  }
+}
+
+@media all and (max-width: 1800px) {
+  .other-projects {
+    h3 {
+      font-size: 30px;
+    }
+  }
+}

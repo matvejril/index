@@ -1,0 +1,109 @@
+.case-banner {
+    padding: 0;
+    position: relative;
+    .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    &__bg {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    &__logo {
+        margin-bottom: 50px;
+    }
+
+    &__content {
+        p {
+            font-family: HelveticaNeueCyrBold, sans-serif;
+            color: #ffffff;
+            font-size: 25px;
+            line-height: 1.4;
+            margin: 0;
+            max-width: 570px;
+        }
+    }
+
+    &_zhukovka {
+        padding-bottom: 123px;
+        .case-banner__content {
+            padding: 68px 0 0 22px;
+        }
+        .case-banner__logo {
+            margin-bottom: 51px;
+        }
+    }
+
+    &_pichugovo {
+        padding-bottom: 123px;
+        .case-banner__content {
+            padding: 71px 0 0 7px;
+        }
+        .case-banner__logo {
+            margin-bottom: 40px;
+        }
+        .case-banner__slogan {
+            margin-bottom: 48px;
+            font-size: 32px;
+            min-width: 710px;
+            font-family: HelveticaNeueCyrMedium, sans-serif;
+            letter-spacing: 0.5px;
+        }
+        .case-banner__description {
+            font-family: HelveticaNeueCyrRoman, sans-serif;
+            font-size: 17px;
+            max-width: 680px;
+            line-height: 1.45;
+        }
+    }
+
+    &_biovestin {
+        padding-bottom: 123px;
+        .case-banner__content {
+            display: block;
+            margin: 0 auto;
+            padding-top: 18px;
+            text-align: center;
+        }
+        .case-banner__logo {
+            margin-bottom: 23px;
+        }
+        .case-banner__slogan {
+            font-size: 52px;
+            max-width: none;
+            color: #343434;
+        }
+    }
+}
+
+@media all and (max-width: 1800px) {
+    .case-banner {
+        &_zhukovka {
+            padding-bottom: 70px;
+            .case-banner__content {
+                padding-left: 10px;
+            }
+        }
+        &_pichugovo {
+            padding-bottom: 70px;
+        }
+
+        &_biovestin {
+            padding-bottom: 70px;
+            .case-banner__content {
+                padding-top: 73px;
+            }
+            .case-banner__logo {
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+            }
+            .case-banner__slogan {
+                font-size: 32px;
+            }
+        }
+    }
+}

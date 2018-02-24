@@ -1,0 +1,43 @@
+.our-clients {
+    padding: 149px 0 60px 0;
+    &__title {
+        color: #848484;
+        font-family: HelveticaNeueCyrBold, sans-serif;
+        font-size: 40px;
+        text-align: center;
+        margin: 0 0 55px 0;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 92%;
+        margin: 0 auto;
+        align-items: center;
+        div {
+            width: calc(~'100%/5');
+            min-width: 185px;
+            text-align: center;
+            margin: 50px 0 50px 0;
+        }
+
+        img {
+            display: inline;
+            vertical-align: middle;
+        }
+    }
+}
+
+@media all and (max-width : 1800px) {
+    .our-clients {
+        padding-top: 75px;
+        &__title {
+            font-size: 30px;
+        }
+        &__list {
+            div {
+                margin: 40px 0 40px 0;
+            }
+        }
+    }
+}

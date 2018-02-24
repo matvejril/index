@@ -1,0 +1,50 @@
+.person-card {
+    position: relative;
+    width: calc(~'100%/4');
+    user-select: none;
+    &__img {
+        width: 100%;
+        display: block;
+    }
+
+    &__appears {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        visibility: hidden;
+    }
+
+    &__description {
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        color: #ffffff;
+        display: block;
+        width: 100%;
+        vertical-align: middle;
+        transition: none;
+        transform: translate(0, -50%);
+        h5 {
+            margin: 0 0 12px 0;
+            font-family: HelveticaNeueCyrBold,sans-serif;
+            font-size: 22px;
+        }
+        p {
+            margin: 0;
+            font-family: HelveticaNeueCyrRoman,sans-serif;
+            font-size: 16px;
+        }
+    }
+    &:hover {
+        .person-card__appears {
+            visibility: visible;
+            background-color: rgba(0, 0, 0, 0.30);
+            transition: all .5s linear;
+            -o-transition: all .5s linear;
+            -moz-transition: all .5s linear;
+            -webkit-transition: all .5s linear;
+        }
+    }
+}

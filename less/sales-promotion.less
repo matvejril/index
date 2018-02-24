@@ -1,0 +1,51 @@
+.sales-promotion {
+  &__title {
+    margin: 0 0 59px 0;
+    font-family: HelveticaNeueCyrMedium, sans-serif;
+    font-size: 34px;
+    color: #343434;
+  }
+
+  p {
+    width: 50%;
+    margin: 0 0 118px 0;
+    font-family: HelveticaNeueCyrRoman, sans-serif;
+    font-size: 23px;
+    color: #343434;
+    line-height: 1.6;
+    &:first-child {
+      margin-bottom: 137px;
+    }
+  }
+  &__img-1 {
+    display: block;
+    margin: 0 auto 117px auto;
+  }
+  &__img-2 {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+@media all and (max-width: 1800px) {
+  .sales-promotion {
+    &__title {
+      margin-bottom: 25px;
+      font-size: 23px;
+    }
+    p {
+      margin-bottom: 140px;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+    &__img-1 {
+      max-width: 38%;
+      margin-bottom: 17px;
+    }
+    &__img-2 {
+      max-width: 81%;
+      //margin-bottom: 17px;
+    }
+  }
+}

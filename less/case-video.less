@@ -1,0 +1,44 @@
+.case-video {
+  video {
+    width: 47.5%;
+    max-width: 830px;
+    margin: 0 auto;
+    display: block;
+    border-style: solid;
+    border-width: 33px 130px 74px 130px;
+    -moz-border-image: url(../images/cases/pc-window-1093md.png) 33 130 74 130 stretch;
+    -webkit-border-image: url(../images/cases/pc-window-1093md.png) 33 130 74 130 stretch;
+    -o-border-image: url(../images/cases/pc-window-1093md.png) 33 130 74 130 stretch;
+    border-image: url(../images/cases/pc-window-1093md.png) 33 130 74 130 fill stretch;
+  }
+
+  &_zhukovka {
+    padding: 165px 0 130px 0;
+  }
+
+  &_pichugovo {
+    padding: 165px 0 130px 0;
+  }
+
+  &_biovestin {
+    padding: 165px 0 130px 0;
+  }
+}
+
+@media all and (max-width: 1800px) {
+  .case-video {
+    video {
+      width: 63.5%;
+      max-width: 762px;
+    }
+    &_zhukovka {
+      padding: 60px 0 53px 0;
+    }
+    &_pichugovo {
+      padding: 62px 0 58px 0;
+    }
+    &_biovestin {
+      padding: 50px 0 75px 0;
+    }
+  }
+}

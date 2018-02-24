@@ -1,0 +1,22 @@
+{
+  "name": "index",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-less": "^3.3.2",
+    "gulp-rename": "^1.2.2",
+    "jquery": "^3.2.1"
+  },
+  "dependencies": {
+    "browserify": "^15.1.0",
+    "inputmask": "^3.3.11",
+    "normalize.css": "^7.0.0",
+    "slick-carousel": "^1.8.1"
+  }
+}

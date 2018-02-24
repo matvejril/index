@@ -1,0 +1,92 @@
+.case-main-task {
+    padding: 90px 0 50px 0;
+    h2 {
+        font-family: HelveticaNeueCyrBold, sans-serif;
+        font-size: 61px;
+    }
+    &__description {
+        p {
+            font-family: HelveticaNeueCyrRoman, sans-serif;
+            font-size: 17px;
+            margin: 0 0 24px 0;
+            line-height: 1.5;
+            :last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &_zhukovka {
+        max-width: 55%;
+        h2 {
+            margin: 0 0 16px 0;
+        }
+        .case-main-task__description {
+            margin-bottom: 57px;
+        }
+        .case-main-task__steps {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            li {
+                margin: 0 0 58px 0;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+            h3 {
+                font-family: HelveticaNeueCyrMedium, sans-serif;
+                font-size: 33px;
+                margin: 0 0 18px 0;
+            }
+            p {
+                font-family: HelveticaNeueCyrRoman, sans-serif;
+                font-size: 17px;
+                margin: 0;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    &_pichugovo {
+        max-width: 62%;
+        padding-bottom: 123px;
+        h2 {
+            margin: 0 0 21px 0;
+        }
+        .case-main-task__description {
+            margin-bottom: 0;
+        }
+    }
+
+    &_biovestin {
+        padding-top: 157px;
+        padding-bottom: 138px;
+        h2 {
+            margin: 0 0 25px 0;
+        }
+        .case-main-task__description {
+            max-width: 50%;
+            p {
+                font-size: 24px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1800px) {
+    .case-main-task {
+        h2 {
+            margin-bottom: 20px;
+        }
+        &_biovestin {
+            padding-top: 80px;
+            padding-bottom: 95px;
+            .case-main-task__description {
+                p {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}

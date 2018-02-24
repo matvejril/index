@@ -1,0 +1,159 @@
+.case-landing-page {
+    video {
+        width: 69.5%;
+        max-width: 834px;
+        margin: 0 auto;
+        display: block;
+        border-style: solid;
+        border-width: 38px 125px 72px 125px;
+        -moz-border-image: url(../images/cases/pc-window-1093md.png) 33 130 74 130 stretch;
+        -webkit-border-image: url(../images/cases/pc-window-1093md.png) 33 130 74 130 stretch;
+        -o-border-image: url(../images/cases/pc-window-1093md.png) 33 130 74 130 stretch;
+        border-image: url(../images/cases/pc-window-1093md.png) 33 130 74 130 fill stretch;
+    }
+    &_zhukovka {
+        padding: 84px 0 80px 0;
+        margin-bottom: 75px;
+        h2 {
+            margin: 0 0 105px 0;
+            font-family: HelveticaNeueCyrBold, sans-serif;
+            font-size: 60px;
+            color: #343434;
+        }
+    }
+    &_biovestin {
+        padding: 70px 0 200px 0;
+        h2 {
+            margin: 0 0 34px 0;
+            font-family: HelveticaNeueCyrMedium, sans-serif;
+            font-size: 30px;
+            text-align: center;
+            color: #343434;
+        }
+        .case-landing-page__preview {
+            font-family: HelveticaNeueCyrMedium, sans-serif;
+            color: #212121;
+            text-align: center;
+            margin: 0 0 90px 0;
+            font-size: 27px;
+            line-height: 1.25;
+        }
+        .case-landing-page__description {
+            width: 50%;
+            font-family: HelveticaNeueCyrRoman, sans-serif;
+            font-size: 27px;
+            color: #212121;
+            margin: 0 0 240px 0;
+            line-height: 1.3;
+        }
+
+        .case-landing-page__outline {
+            width: 72%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+
+        .case-landing-page__item {
+            text-align: center;
+            margin: 0;
+            img {
+                display: inline-block;
+                margin: 0 0 65px 0;
+            }
+            figcaption {
+                margin: 0;
+                p {
+                    margin: 0;
+                    font-family: HelveticaNeueCyrRoman, sans-serif;
+                    font-size: 25px;
+                    color: #343434;
+                    line-height: 1.4;
+                }
+            }
+        }
+        .case-landing-page__item_antibiotics {
+            width: 300px;
+        }
+        .case-landing-page__item_message {
+            width: 550px;
+            img {
+                margin-bottom: 54px;
+            }
+        }
+        .case-landing-page__item_percent {
+            width: 300px;
+        }
+        .case-landing-page__arr {
+            width: 142px;
+            align-self: flex-end;
+            img {
+                margin-bottom: 45px;
+            }
+        }
+        video {
+            margin-bottom: 198px;
+        }
+    }
+}
+
+@media all and (max-width: 1800px) {
+    .case-landing-page {
+        video {
+            width: 63.5%;
+        }
+        &_biovestin {
+            padding-top: 82px;
+            padding-bottom: 150px;
+            h2 {
+                font-size: 23px;
+                margin-bottom: 34px;
+            }
+            .case-landing-page__preview {
+                margin-bottom: 63px;
+                font-size: 17px;
+                line-height: 1.45;
+            }
+            video {
+                margin-bottom: 75px;
+            }
+            .case-landing-page__description {
+                margin-bottom: 117px;
+                font-size: 17px;
+                line-height: 1.45;
+            }
+            .case-landing-page__outline {
+                width: 64%;
+            }
+            .case-landing-page__item {
+                width: 250px;
+                img {
+                    width: 125px;
+                    display: inline-block;
+                    margin-bottom: 45px;
+                }
+                figcaption {
+                    p {
+                        font-size: 18px;
+                        line-height: 1.24;
+                    }
+                }
+            }
+            .case-landing-page__item_percent {
+                img {
+                    width: 90px;
+                }
+            }
+            .case-landing-page__item_message {
+                width: 450px;
+            }
+            .case-landing-page__arr {
+                img {
+                    width: 95px;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

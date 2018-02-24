@@ -1,0 +1,210 @@
+.digital-marketing {
+    position: relative;
+    .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    &__bg {
+        width: 100%;
+    }
+    h2 {
+        font-family: HelveticaNeueCyrBold, sans-serif;
+        font-size: 61px;
+        margin: 0 0 35px 0;
+        color: #ffffff;
+    }
+    p {
+        font-family: HelveticaNeueCyrMedium, sans-serif;
+        font-size: 17px;
+        margin: 0 0 25px 0;
+        line-height: 1.5;
+        color: #ffffff;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &_zhukovka {
+        margin-bottom: 60px;
+        h2 {
+            margin-top: 58px;
+        }
+        p {
+            max-width: 720px;
+        }
+    }
+    &_pichugovo {
+        margin-bottom: 60px;
+        h2 {
+            margin-top: 58px;
+        }
+        p {
+            margin-bottom: 155px;
+            max-width: 620px;
+        }
+        .digital-marketing__directions {
+            width: 83%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        .digital-marketing__directions-item {
+            width: 45%;
+            text-align: center;
+            h3 {
+                font-size: 34px;
+                margin: 0 0 17px 0;
+                font-family: HelveticaNeueCyrRoman, sans-serif;
+                color: #ffffff;
+            }
+            p {
+                font-family: HelveticaNeueCyrRoman, sans-serif;
+                margin: 0 0 21px 0;
+            }
+            img {
+                margin: 0;
+            }
+        }
+    }
+    &_biovestin {
+        padding-bottom: 5px;
+        h2 {
+            margin-top: 53px;
+            margin-bottom: 26px;
+            font-size: 81px;
+            line-height: 1.05;
+        }
+        .digital-marketing__subtitle {
+            margin-bottom: 320px;
+            font-family: HelveticaNeueCyrRoman, sans-serif;
+            font-size: 25.5px;
+        }
+        .digital-marketing__list {
+            width: 99%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        .digital-marketing__item {
+            width: 380px;
+            h3 {
+                margin: 0 0 55px 0;
+                font-family: HelveticaNeueCyrMedium, sans-serif;
+                font-size: 33px;
+                color: #ffffff;
+                line-height: 1.05;
+            }
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                li {
+                    margin: 0 0 25px 0;
+                    font-family: HelveticaNeueCyrRoman, sans-serif;
+                    font-size: 25px;
+                    color: #ffffff;
+                    line-height: 1.4;
+                }
+            }
+        }
+        .digital-marketing__item_mom {
+            width: 305px;
+            h3 {
+                &:after {
+                    content: url(../images/cases/biovestine/thread-1.png);
+                    display: block;
+                    width: 100%;
+                    overflow: hidden;
+                }
+            }
+        }
+        .digital-marketing__item_zchkt {
+            h3 {
+                margin-bottom: 49px;
+                &:after {
+                    content: url(../images/cases/biovestine/thread-2.png);
+                    display: block;
+                    width: 100%;
+                    overflow: hidden;
+                }
+            }
+        }
+        .digital-marketing__item_application {
+            width: 340px;
+            h3 {
+                &:after {
+                    content: url(../images/cases/biovestine/thread-3.png);
+                    display: block;
+                    width: 100%;
+                    overflow: hidden;
+                }
+            }
+        }
+        .digital-marketing__item_immunity{
+            h3 {
+                &:after {
+                    content: url(../images/cases/biovestine/thread-4.png);
+                    display: block;
+                    width: 100%;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1800px) {
+    .digital-marketing {
+        &_zhukovka {
+            margin-bottom: 58px;
+            h2 {
+                margin-top: 58px;
+            }
+        }
+        &_pichugovo {
+            margin-bottom: 27px;
+            h2 {
+                margin-top: 58px;
+            }
+        }
+        &_biovestin {
+            margin-bottom: 53px;
+            h2 {
+                margin-top: 61px;
+                font-size: 61px;
+                margin-bottom: 32px;
+            }
+            .digital-marketing__subtitle {
+                margin-bottom: 230px;
+                font-size: 17px;
+            }
+            .digital-marketing__item {
+                width: 270px;
+                h3 {
+                    margin-bottom: 28px;
+                    font-size: 24px;
+                }
+                ul {
+                    li {
+                        font-size: 19px;
+                        margin-bottom: 18px;
+                    }
+                }
+            }
+            .digital-marketing__item_zchkt {
+                margin-bottom: 28px;
+            }
+            .digital-marketing__item_immunity{
+                width: 280px;
+                margin-bottom: 28px;
+            }
+        }
+    }
+}
+
+
+
