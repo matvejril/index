@@ -3688,7 +3688,7 @@ body {
 }
 .case-branding__logo {
   display: table;
-  margin: -65px 0 0 0;
+  margin: -115px 0 0 0;
 }
 .case-branding__logo-helper {
   display: table-cell;
@@ -3724,7 +3724,7 @@ body {
 }
 @media all and (max-width: 1366px) {
   .case-branding__logo {
-    margin: -30px 0 0 0;
+    margin: -65px 0 0 0;
   }
 }
 a {
