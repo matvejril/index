@@ -3428,16 +3428,50 @@ template {
     box-sizing: border-box;
   }
 }
-.stub {
-  color: #ffffff;
-  background-color: #D1D1D1;
-  font-size: 30px;
-  font-family: HelveticaNeueCyrBold, sans-serif;
-  text-align: center;
-  padding: 200px 0 250px 0;
+.case-branding__logo {
+  display: table;
+  margin: -115px 0 0 0;
 }
-.stub p {
+.case-branding__logo-helper {
+  display: table-cell;
+  vertical-align: middle;
+  height: 300px;
+}
+.case-branding__description {
+  margin: 0 0 98px 0;
+}
+.case-branding__name {
+  margin: 0 0 20px 0;
+  font-family: HelveticaNeueCyrMedium, sans-serif;
+  font-size: 32px;
+  color: #343434;
+  letter-spacing: 0.7px;
+}
+.case-branding__development {
   margin: 0;
+  font-family: HelveticaNeueCyrRoman, sans-serif;
+  font-size: 17px;
+  color: #2a2a2a;
+  letter-spacing: 0.15px;
+  line-height: 1.4;
+}
+.case-branding__banners {
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+}
+.case-branding__banner {
+  width: 100%;
+  height: auto;
+}
+@media all and (max-width: 1366px) {
+  .case-branding__logo {
+    margin: -65px 0 0 0;
+  }
+}
+.case-video-production__video-player {
+  display: block;
+  margin: 0 auto;
 }
 html,
 body {
@@ -3710,46 +3744,16 @@ body {
     max-width: 81%;
   }
 }
-.case-branding__logo {
-  display: table;
-  margin: -115px 0 0 0;
+.stub {
+  color: #ffffff;
+  background-color: #D1D1D1;
+  font-size: 30px;
+  font-family: HelveticaNeueCyrBold, sans-serif;
+  text-align: center;
+  padding: 200px 0 250px 0;
 }
-.case-branding__logo-helper {
-  display: table-cell;
-  vertical-align: middle;
-  height: 300px;
-}
-.case-branding__description {
-  margin: 0 0 98px 0;
-}
-.case-branding__name {
-  margin: 0 0 20px 0;
-  font-family: HelveticaNeueCyrMedium, sans-serif;
-  font-size: 32px;
-  color: #343434;
-  letter-spacing: 0.7px;
-}
-.case-branding__development {
+.stub p {
   margin: 0;
-  font-family: HelveticaNeueCyrRoman, sans-serif;
-  font-size: 17px;
-  color: #2a2a2a;
-  letter-spacing: 0.15px;
-  line-height: 1.4;
-}
-.case-branding__banners {
-  margin: 0;
-  font-size: 0;
-  line-height: 0;
-}
-.case-branding__banner {
-  width: 100%;
-  height: auto;
-}
-@media all and (max-width: 1366px) {
-  .case-branding__logo {
-    margin: -65px 0 0 0;
-  }
 }
 a {
   text-decoration: none;
