@@ -7,9 +7,8 @@
         tabLinks[i].addEventListener('click', changeTab);
     }
 
-    function changeTab(e) {
+    function changeTab() {
         var tabClick = this;
-        console.log(this);
         var tabClickData = tabClick.getAttribute('data-nav');
         if (!tabClick.classList.contains('case-nav__item_active')) {
             for (var i = 0; i < tabLinks.length; i++) {
@@ -27,7 +26,8 @@
                 tabContent[i].classList.remove('case-content_active');
             }
             if (data === tabLinks[i].getAttribute('data-nav')) {
-                tabContent[i].classList.add('case-content_active')
+                tabContent[i].classList.add('case-content_active');
+                console.log(data);
             }
         }
     }

@@ -1879,6 +1879,25 @@ template {
   max-width: none;
   color: #343434;
 }
+.case-banner_inoton {
+  padding-bottom: 123px;
+}
+.case-banner_inoton .case-banner__content {
+  padding: 70px 0 0 0;
+}
+.case-banner_inoton .case-banner__logo {
+  margin-bottom: 32px;
+}
+.case-banner_inoton .case-banner__slogan {
+  margin-bottom: 29px;
+  max-width: 640px;
+}
+.case-banner_inoton .case-banner__description {
+  font-family: HelveticaNeueCyrRoman, sans-serif;
+  font-size: 17px;
+  max-width: 600px;
+  line-height: 1.45;
+}
 @media all and (max-width: 1800px) {
   .case-banner_zhukovka {
     padding-bottom: 70px;
@@ -1902,6 +1921,9 @@ template {
   .case-banner_biovestin .case-banner__slogan {
     font-size: 32px;
   }
+  .case-banner__inoton {
+    padding-bottom: 70px;
+  }
 }
 .case-video video {
   width: 47.5%;
@@ -1923,6 +1945,9 @@ template {
 .case-video_biovestin {
   padding: 165px 0 130px 0;
 }
+.case-video_inoton {
+  padding: 165px 0 130px 0;
+}
 @media all and (max-width: 1800px) {
   .case-video video {
     width: 63.5%;
@@ -1935,6 +1960,9 @@ template {
     padding: 62px 0 58px 0;
   }
   .case-video_biovestin {
+    padding: 50px 0 75px 0;
+  }
+  .case-video_inoton {
     padding: 50px 0 75px 0;
   }
 }
@@ -2008,6 +2036,13 @@ template {
 .case-main-task_biovestin .case-main-task__description p {
   font-size: 24px;
   margin-bottom: 0;
+}
+.case-main-task_inoton .case-main-task__list {
+  list-style-type: none;
+}
+.case-main-task_inoton .case-main-task__list li {
+  font-family: HelveticaNeueCyrRoman, sans-serif;
+  font-size: 17px;
 }
 @media all and (max-width: 1800px) {
   .case-main-task h2 {
@@ -3076,6 +3111,47 @@ template {
     height: auto;
     border-width: 91px 75px 92px 25px;
   }
+}
+.main-buyers {
+  font-family: HelveticaNeueCyrRoman, sans-serif;
+}
+.main-buyers__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+.main-buyers__content {
+  width: 50%;
+}
+.main-buyers__view {
+  width: 50%;
+}
+.main-buyers__title {
+  margin: 0 0 10px 0;
+}
+.main-buyers__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 5px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.main-buyers__item h3 {
+  margin: 0 0 10px 0;
 }
 /*avtodok*/
 .case-banner_avtodok .case-banner__bg {
