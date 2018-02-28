@@ -3470,8 +3470,16 @@ template {
   }
 }
 .case-video-production__video-player {
+  width: 768px;
+  height: 432px;
   display: block;
   margin: 0 auto;
+}
+@media all and (max-width: 1366px) {
+  .case-video-production__video-player {
+    width: 560px;
+    height: 315px;
+  }
 }
 html,
 body {
