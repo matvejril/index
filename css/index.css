@@ -3514,6 +3514,25 @@ body {
   display: inline-block;
   padding: 0 15px;
   margin: 0 5px;
+}
+.other-projects__item:hover {
+  cursor: pointer;
+  -webkit-filter: none;
+  filter: none;
+}
+.other-projects__item:hover .other-projects__item-front {
+  opacity: 1;
+}
+.other-projects__item:hover .other-projects__item-img {
+  -webkit-filter: none;
+  filter: none;
+}
+.other-projects__item-front {
+  display: inline-block;
+  height: 100%;
+  opacity: 0.5;
+}
+.other-projects__item-img {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
@@ -3522,11 +3541,6 @@ body {
   -webkit-filter: gray;
   filter: gray;
   /* IE 6-9 */
-}
-.other-projects__item:hover {
-  cursor: pointer;
-  -webkit-filter: none;
-  filter: none;
 }
 @media all and (max-width: 1800px) {
   .other-projects h3 {

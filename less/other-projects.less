@@ -7,7 +7,6 @@
     text-align: center;
     margin: 0 0 42px 0;
   }
-
   &__list {
     padding: 0;
     margin: 0 auto;
@@ -18,21 +17,33 @@
     align-items: center;
     flex-wrap: wrap;
   }
-
   &__item {
     display: inline-block;
     padding: 0 15px;
     margin: 0 5px;
+    &:hover {
+      cursor: pointer;
+      filter: none;
+      .other-projects__item-front {
+        opacity: 1;
+      }
+      .other-projects__item-img {
+        filter: none;
+      }
+    }
+  }
+  &__item-front {
+    display: inline-block;
+    height: 100%;
+    opacity: 0.5;
+  }
+  &__item-img {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
     filter: gray; /* IE 6-9 */
-    &:hover {
-      cursor: pointer;
-      filter: none;
-    }
   }
 }
 
