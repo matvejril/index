@@ -711,6 +711,12 @@ template {
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: "HelveticaNeueCyrLightItalic";
+  src: url(../fonts/HelveticaNeueCyr-LightItalic.otf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
 .container {
   margin: 0 auto;
   max-width: 1747px;
@@ -1921,7 +1927,7 @@ template {
   .case-banner_biovestin .case-banner__slogan {
     font-size: 32px;
   }
-  .case-banner__inoton {
+  .case-banner_inoton {
     padding-bottom: 70px;
   }
 }
@@ -2037,12 +2043,33 @@ template {
   font-size: 24px;
   margin-bottom: 0;
 }
+.case-main-task_inoton {
+  padding: 150px 0 115px 0;
+}
+.case-main-task_inoton h2 {
+  margin: 0 0 22px 0;
+}
+.case-main-task_inoton p {
+  font-family: HelveticaNeueCyrRoman, sans-serif;
+  font-size: 17px;
+  margin: 0 0 24px 0;
+  line-height: 1.5;
+}
+.case-main-task_inoton p :last-child {
+  margin-bottom: 0;
+}
 .case-main-task_inoton .case-main-task__list {
+  padding: 0 0 0 37px;
+  margin: 0;
   list-style-type: none;
 }
 .case-main-task_inoton .case-main-task__list li {
   font-family: HelveticaNeueCyrRoman, sans-serif;
   font-size: 17px;
+  margin: 0 0 11px 0;
+}
+.case-main-task_inoton .case-main-task__list li:last-child {
+  margin-bottom: 0;
 }
 @media all and (max-width: 1800px) {
   .case-main-task h2 {
@@ -2054,6 +2081,9 @@ template {
   }
   .case-main-task_biovestin .case-main-task__description p {
     font-size: 17px;
+  }
+  .case-main-task_inoton {
+    padding: 67px 0 115px 0;
   }
 }
 .case-landing-page video {
@@ -3112,10 +3142,20 @@ template {
     border-width: 91px 75px 92px 25px;
   }
 }
-.main-buyers {
-  font-family: HelveticaNeueCyrRoman, sans-serif;
+.case-main-buyers {
+  margin-bottom: 144px;
 }
-.main-buyers__box {
+.case-main-buyers p {
+  font-family: HelveticaNeueCyrRoman, sans-serif;
+  font-size: 17px;
+  margin: 0 0 24px 0;
+  line-height: 1.5;
+}
+.case-main-buyers p:last-child {
+  margin-bottom: 0;
+}
+.case-main-buyers__box {
+  margin-bottom: 95px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3128,19 +3168,30 @@ template {
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
 }
-.main-buyers__content {
-  width: 50%;
+.case-main-buyers__content {
+  width: -webkit-calc(48% - 10px);
+  width: calc(48% - 10px);
 }
-.main-buyers__view {
-  width: 50%;
+.case-main-buyers__view {
+  width: -webkit-calc(48.5% - 10px);
+  width: calc(48.5% - 10px);
 }
-.main-buyers__title {
-  margin: 0 0 10px 0;
+.case-main-buyers__view img {
+  width: 100%;
+  height: auto;
+  max-width: 540px;
+  margin-top: 130px;
 }
-.main-buyers__list {
+.case-main-buyers__title {
+  margin: 0 0 23px 0;
+  font-family: HelveticaNeueCyrMedium, sans-serif;
+  font-size: 33.5px;
+  color: #343434;
+}
+.case-main-buyers__list {
   list-style-type: none;
   padding: 0;
-  margin: 0 0 5px 0;
+  margin: 0 0 115px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3150,8 +3201,126 @@ template {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.main-buyers__item h3 {
-  margin: 0 0 10px 0;
+.case-main-buyers__item h3 {
+  margin: 0 0 23px 0;
+  font-family: HelveticaNeueCyrMedium, sans-serif;
+  font-size: 27.5px;
+  color: #343434;
+}
+.case-main-buyers__item p {
+  margin: 0;
+  font-family: HelveticaNeueCyrLightItalic, sans-serif;
+}
+.case-main-buyers .case-main-buyers__item_brands h3 {
+  margin-bottom: 27px;
+}
+.case-main-buyers .case-main-buyers__item_brands p {
+  color: #8d1818;
+  font-size: 23px;
+  text-decoration: underline;
+}
+.case-main-buyers .case-main-buyers__item_models h3 {
+  margin-bottom: 30px;
+}
+.case-main-buyers .case-main-buyers__item_models p {
+  color: #7718b3;
+  font-size: 21px;
+  text-decoration: underline;
+}
+.case-main-buyers .case-main-buyers__item_competitors h3 {
+  margin-bottom: 30px;
+}
+.case-main-buyers .case-main-buyers__item_competitors p {
+  line-height: 1.4;
+  font-size: 21px;
+  color: #515151;
+}
+.case-main-buyers .case-main-buyers__item_product h3 {
+  margin-bottom: 30px;
+}
+.case-main-buyers .case-main-buyers__item_product p {
+  font-size: 19px;
+  color: #af4e00;
+}
+.case-main-buyers .case-main-buyers__text_bold {
+  font-weight: bold;
+}
+.case-main-buyers .case-main-buyers__price {
+  margin-bottom: 5px;
+  font-family: HelveticaNeueCyrMedium, sans-serif;
+  font-size: 58px;
+}
+.case-main-buyers .case-main-buyers__pre-price {
+  font-size: 32px;
+}
+.case-adv-optimization {
+  padding-bottom: 172px;
+}
+.case-adv-optimization p {
+  font-family: HelveticaNeueCyrRoman, sans-serif;
+  font-size: 17px;
+  margin: 0 0 24px 0;
+  line-height: 1.5;
+}
+.case-adv-optimization p:last-child {
+  margin-bottom: 0;
+}
+.case-adv-optimization__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.case-adv-optimization__content {
+  width: -webkit-calc(65% - 10px);
+  width: calc(65% - 10px);
+}
+.case-adv-optimization__view {
+  width: -webkit-calc(35% - 10px);
+  width: calc(35% - 10px);
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+.case-adv-optimization__view img {
+  margin-bottom: -10px;
+  display: inline-block;
+  height: auto;
+  border-style: solid;
+  border-width: 57px 13px 55px 13px;
+  -webkit-border-image: url(../images/cases/window-mobile-white.png) 57 13 55 13 fill stretch;
+  -o-border-image: url(../images/cases/window-mobile-white.png) 57 13 55 13 fill stretch;
+  border-image: url(../images/cases/window-mobile-white.png) 57 13 55 13 fill stretch;
+}
+.case-adv-optimization__title {
+  margin: 0 0 29px 0;
+  font-family: HelveticaNeueCyrMedium, sans-serif;
+  font-size: 33.5px;
+  color: #343434;
+}
+.case-adv-optimization__list {
+  padding: 0 0 0 37px;
+  margin: 0 0 75px 0;
+  list-style-type: none;
+}
+.case-adv-optimization__list li {
+  font-family: HelveticaNeueCyrRoman, sans-serif;
+  font-size: 17px;
+  margin: 0 0 2px 0;
+  line-height: 1.5;
+}
+.case-adv-optimization__list li :last-child {
+  margin-bottom: 0;
+}
+.case-adv-optimization .case-adv-optimization__quote {
+  margin-bottom: 14px;
+  font-family: HelveticaNeueCyrItalic, sans-serif;
+  font-size: 25.5px;
+  color: #2a2a2a;
 }
 /*avtodok*/
 .case-banner_avtodok .case-banner__bg {
