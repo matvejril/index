@@ -8,7 +8,8 @@
     }
 
     function changeTab(e) {
-        var tabClick = e.target;
+        var tabClick = this;
+        console.log(this);
         var tabClickData = tabClick.getAttribute('data-nav');
         if (!tabClick.classList.contains('case-nav__item_active')) {
             for (var i = 0; i < tabLinks.length; i++) {
@@ -18,7 +19,6 @@
             changeTabContent(tabClickData);
         }
     }
-
 
     // Смена контента
     function changeTabContent(data) {
