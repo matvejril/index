@@ -61,3 +61,51 @@
         color: #2a2a2a;
     }
 }
+
+@media all and (max-width: 720px) {
+    .case-adv-optimization {
+        padding-bottom: 62px;
+        p {
+            margin-bottom: 14px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        &__box {
+            flex-wrap: wrap;
+        }
+        &__content {
+            width: 100%;
+        }
+        &__title {
+            margin-bottom: 16px;
+            font-size: 22.5px;
+        }
+        &__list {
+            padding: 0;
+            margin-bottom: 18px;
+            li {
+                margin: 0;
+                line-height: 1.1;
+                font-size: 14px;
+            }
+        }
+        .case-adv-optimization__quote {
+            margin-bottom: 10px;
+            font-size: 16.5px;
+        }
+        &__view {
+            width: 100%;
+            padding: 0;
+            text-align: center;
+            img {
+                width: 185px;
+                margin-top: 14px;
+                border-width: 51px 10px 55px 10px;
+
+                -webkit-border-image: url(../images/cases/window-mobile-white.png) 51 10 55 10 fill stretch;
+                -o-border-image: url(../images/cases/window-mobile-white.png) 51 10 55 10 fill stretch;
+                border-image: url(../images/cases/window-mobile-white.png) 51 10 55 10 fill stretch;
+            }
+        }
+    }
+}
