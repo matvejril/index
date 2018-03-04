@@ -2,10 +2,8 @@
     padding: 10px 0 65px 0;
     margin: 0;
     display: flex;
-    //width: 60%;
     width: 100%;
     min-height: 120px;
-    //justify-content: space-between;
     justify-content: flex-start;
     align-items: center;
     list-style-type: none;
@@ -37,7 +35,7 @@
     &__item-img {
         display: inline-block;
         list-style-type: none;
-        padding: 0 15px 0 15px;
+        //padding: 0 15px 0 15px;
         -webkit-filter: grayscale(100%);
         -moz-filter: grayscale(100%);
         -ms-filter: grayscale(100%);
@@ -78,7 +76,7 @@
 @media all and (max-width : 1800px) {
     .case-nav {
         li {
-            margin: 0 22px;
+            margin: 0 11px;
         }
         &__item_pichugovo {
             width: 100px;
@@ -134,5 +132,12 @@
 }
 
 @media all and (max-width: 320px) {
+    .case-nav {
+        min-height: 70px;
+        &__item {
+            width: 50px;
+            margin: 0 5px;
+        }
 
+    }
 }

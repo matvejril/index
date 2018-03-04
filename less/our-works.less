@@ -7,8 +7,8 @@
     margin: 0;
     list-style-type: none;
     li {
-        width: calc(~'100%/3');
         overflow: hidden;
+        width: calc(~'100%/3');
         &:hover {
             img {
                 -webkit-transform: scale(1.05);
@@ -26,7 +26,6 @@
     img {
         display: block;
         width: calc(~'100% + 5px');
-        //height: calc(~'100% + 5px');
         -webkit-transition: all 0.5s ease-out;
         -moz-transition: all 0.5s ease-out;
         -o-transition: all 0.5s ease-out;
@@ -34,13 +33,11 @@
     }
 }
 
-
-@media all and (max-width : 1800px) {
+@media all and (max-width: 1800px) {
     .our-works {
         padding-top: 52px;
     }
 }
-
 
 @media all and (max-width: 720px) {
     .our-works {
@@ -60,4 +57,5 @@
         }
     }
 }
+
 

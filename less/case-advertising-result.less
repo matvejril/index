@@ -119,17 +119,22 @@
         }
     }
     &_inoton {
-        //padding-top: 60px;
         h2 {
+            max-width: 700px;
             margin: 60px 0 51px 0;
         }
+
+        .case-advertising-result__row {
+            margin-bottom: 75px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
         .case-advertising-result__pretext {
             display: inline-block;
             margin: 0 0 0 8px;
             font-size: 34px;
-            //&:first-child {
-            //    margin-bottom: -27px;
-            //}
         }
 
         .case-advertising-result__subtext {
@@ -155,6 +160,7 @@
         }
 
         .case-advertising-result__subtext {
+            max-width: 80%;
             margin: 0 0 46px 0;
             font-size: 21px;
             line-height: 1.2;
@@ -162,7 +168,7 @@
 
         .case-advertising-result__description {
             margin-top: -7px;
-            margin-bottom: 75px;
+            margin-bottom: 0;
         }
     }
 }
@@ -216,51 +222,91 @@
 @media all and (max-width: 720px) {
     .case-advertising-result {
         &_inoton {
-            //padding-top: 60px;
             h2 {
-                margin: 60px 0 51px 0;
+                max-width: none;
+                margin: 60px 0 30px 0;
                 font-size: 25px;
-
             }
+
+            .case-advertising-result__row {
+                margin-bottom: 31px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
             .case-advertising-result__pretext {
                 display: inline-block;
-                margin: 0 0 0 8px;
-                font-size: 34px;
-            }
-
-            .case-advertising-result__subtext {
-                color: #343434;
-                margin: 0 0 10px  0;
-                display: inline-block;
-                font-family: HelveticaNeueCyrMedium, sans-serif;
+                margin: 0;
                 font-size: 20px;
             }
 
+            .case-advertising-result__subtext {
+                max-width: 90%;
+                color: #343434;
+                margin: 0 0 26px  0;
+                font-size: 16px;
+            }
+
             .case-advertising-result__value {
-                display: inline-block;
-                margin-top: -5px;
+                font-size: 35px;
                 &:first-child {
-                    margin: 0 0 -19px 0;
+                    margin: 0 0 4px 0;
                 }
             }
 
             .case-advertising-result__value_gray {
-                display: inline-block;
                 margin: 0 0 0 8px;
                 color: #808080;
-            }
-
-            .case-advertising-result__subtext {
-                margin: 0 0 46px 0;
-                font-size: 21px;
-                line-height: 1.2;
+                font-size: 32px;
             }
 
             .case-advertising-result__description {
                 margin-top: -7px;
-                margin-bottom: 75px;
+                margin-bottom: 0;
+                font-size: 20px;
             }
         }
+        &_avtodok {
+            padding-bottom: 0;
+            h2 {
+                margin: 50px 0 20px 0;
+                font-size: 25px;
+            }
 
+            .case-advertising-result__list {
+                li {
+                    margin: 0 0 10px 0;
+                    .case-advertising-subresult__wrap {
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+            }
+            .case-advertising-result__pretext {
+                font-size: 20px;
+            }
+
+            .case-advertising-result__value {
+                font-size: 35px;
+            }
+            .case-advertising-result__description {
+                font-size: 20px;
+            }
+            .case-advertising-result__subdescription {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 320px) {
+    .case-advertising-result {
+        &_inoton {
+            .case-advertising-result__bg {
+                width: auto;
+                height: 595px;
+            }
+        }
     }
 }

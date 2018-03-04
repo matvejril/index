@@ -134,7 +134,7 @@
       text-align: center;
       img {
         width: 65%;
-        margin: 45px 0 0 0;
+        margin: 35px 0 0 0;
       }
     }
     &__title {
@@ -159,6 +159,36 @@
 
     &__list {
       margin-bottom: 40px;
+    }
+  }
+}
+
+@media all and (max-width: 320px) {
+  .case-main-buyers {
+    margin-bottom: 68px;
+    &__title {
+      max-width: 90%;
+    }
+    &__box {
+      margin-bottom: 80px;
+    }
+    &__content {
+      width: auto;
+    }
+    &__view {
+      img {
+        width: 95%;
+        margin-top: 28px;
+      }
+    }
+    &__list {
+      margin-bottom: 0;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: 50%;
+      margin-bottom: 36px;
     }
   }
 }
