@@ -17,6 +17,36 @@
             margin: 0 0 43px 0;
         }
     }
+    &_avtodok {
+        //h3 {
+        //    margin-top: 68px;
+        //}
+        .case-media-advertising__title {
+            margin: 0 0 68px 0;
+        }
+        .case-media-advertising__row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            margin-bottom: 105px;
+        }
+        .case-media-advertising__col {
+            width: 50%;
+        }
+        .case-media-advertising__description {
+            font-family: HelveticaNeueCyrRoman, sans-serif;
+            font-size: 17px;
+            line-height: 1.5;
+            margin: 0 0 38px 0;
+        }
+
+        .adv-con__caption {
+            width: 100%;
+        }
+        .adv-con__queries {
+            width: 100%;
+        }
+    }
 }
 
 @media all and (max-width: 1800px) {
@@ -39,6 +69,19 @@
             h3 {
                 margin: 0 0 10px 0;
                 font-size: 25px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 320px) {
+    .case-media-advertising {
+        &_avtodok {
+            .adv-con__caption {
+                width: 100%;
+            }
+            .adv-con__queries {
+                width: 100%;
             }
         }
     }

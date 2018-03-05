@@ -26,4 +26,21 @@
         });
     }
 
+    var contextAdvertisingSliderPc = $('.contextual-advertising__slider-pc');
+    if (contextAdvertisingSliderPc) {
+        contextAdvertisingSliderPc.slick({
+            autoplay: false,
+            arrows: true,
+            dots: true
+        });
+    }
+
+    var contextAdvertisingSliderMobile = $('.contextual-advertising__slider-mobile');
+    if (contextAdvertisingSliderMobile) {
+        contextAdvertisingSliderMobile.slick({
+            autoplay: false,
+            arrows: true,
+            dots: true
+        });
+    }
 }());
