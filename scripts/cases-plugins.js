@@ -30,7 +30,7 @@
     if (contextAdvertisingSliderPc) {
         contextAdvertisingSliderPc.slick({
             autoplay: false,
-            arrows: true,
+            arrows: false,
             dots: true
         });
     }
@@ -39,7 +39,7 @@
     if (contextAdvertisingSliderMobile) {
         contextAdvertisingSliderMobile.slick({
             autoplay: false,
-            arrows: true,
+            arrows: false,
             dots: true
         });
     }
