@@ -36,7 +36,7 @@
             tabClick.classList.add('main-tab__nav-item_active');
             slider.slick('slickGoTo', +slideIndex);
             changeTabContent(tabClickData);
-            // changeBg(tabClickData);
+            changeBg(tabClickData);
         }
     }
 

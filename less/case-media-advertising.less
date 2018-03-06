@@ -18,33 +18,61 @@
         }
     }
     &_avtodok {
-        //h3 {
-        //    margin-top: 68px;
-        //}
+        padding: 123px 0 115px 0;
         .case-media-advertising__title {
-            margin: 0 0 68px 0;
+            margin: 0 0 44px 0;
         }
         .case-media-advertising__row {
             display: flex;
             justify-content: space-between;
             flex-wrap: nowrap;
-            margin-bottom: 105px;
+            margin-bottom: 80px;
         }
-        .case-media-advertising__col {
-            width: 50%;
+
+        .case-media-advertising__row_mobile {
+            margin-bottom: 0;
+            .case-media-advertising__title {
+                margin-bottom: 155px;
+            }
         }
+
         .case-media-advertising__description {
+            width: 47%;
             font-family: HelveticaNeueCyrRoman, sans-serif;
             font-size: 17px;
             line-height: 1.5;
             margin: 0 0 38px 0;
         }
 
-        .adv-con__caption {
-            width: 100%;
+        .case-media-advertising__text {
+            margin: 0 0 30px 0;
         }
-        .adv-con__queries {
-            width: 100%;
+
+        .case-media-advertising__tags {
+            color: #5190a2;
+            margin: 41px 0 0 0;
+        }
+        .case-media-advertising__view-pc {
+            align-self: flex-end;
+            img {
+                border-style: solid;
+                border-width: 20px 78px 48px 78px;
+                -webkit-border-image: url(../images/cases/pc-window-1093md.png) 28 120 64 120 stretch;
+                -o-border-image: url(../images/cases/pc-window-1093md.png) 28 120 64 120 stretch;
+                border-image: url(../images/cases/pc-window-1093md.png) 28 120 64 120 fill stretch;
+            }
+        }
+        .case-media-advertising__view-mobile {
+            width: 35%;
+            img {
+                width: 200px;
+                margin-top: 17px;
+                border-style: solid;
+                border-width: 56px 15px 56px 15px;
+                -webkit-border-image: url(../images/cases/window-mobile-white.png) 56 13 54 13 stretch;
+                -o-border-image: url(../images/cases/window-mobile-white.png) 56 13 54 13 stretch;
+                border-image: url(../images/cases/window-mobile-white.png) 56 13 54 13 fill stretch;
+            }
         }
     }
 }
@@ -52,7 +80,7 @@
 @media all and (max-width: 1800px) {
     .case-media-advertising {
         &_zhukovka {
-            padding: 58px 0 67px 0;
+            padding: 123px 0 67px 0;
         }
         &_pichugovo {
             padding-bottom: 148px;

@@ -66,17 +66,30 @@
     }
 }
 
+@media all and (max-width: 1279px) {
+    .services {
+        .services__items {
+            align-self: center;
+        }
+    }
+}
+
+
 @media all and (max-width: 720px) {
     .services {
         width: 86%;
         padding: 33px 0 24px 0;
+        flex-wrap: wrap;
         &__item {
             line-height: 1.3;
             font-size: 13px;
         }
 
         &__items {
-            width: 36%;
+            min-width: 36%;
+            width: auto;
+            //width: 100%;
+            margin: 0 auto;
             li {
                 font-family: HelveticaNeueCyrRoman,sans-serif;
                 font-size: 13px;
@@ -86,19 +99,25 @@
         &__list {
             font-size: 13px;
         }
-
+        .services__list_digital {
+            width: auto;
+            margin: 0 0 0 16px;
+        }
         &__logo {
             margin: 0;
+            width: 100%;
+            max-width: none;
+            max-height: none;
+            text-align: center;
             img {
-                margin: 25px 0 0 0;
+                max-width: 180px;
+                margin: 0 0 20px 0;
             }
         }
-        .services__list_digital {
-            margin: -13px 0 12px 0;
-        }
         .services__logo_sm {
-            width: 100%;
+            //width: 100%;
             display: block;
+            margin: 0 auto 20px auto;
         }
         .services__logo_md {
             display: none;
@@ -108,8 +127,6 @@
 
 @media all and (max-width: 320px) {
     .services {
-        width: 100%;
-        flex-wrap: wrap;
         &__logo {
             img {
                 margin: 0 0 54px 0;
@@ -121,8 +138,12 @@
                 font-size: 13px;
             }
         }
-        .services__list_digital {
+        .services-item {
+            width: 100%;
+        }
+        .services__items {
             margin-left: 35px;
         }
     }
 }
+

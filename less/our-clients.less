@@ -42,21 +42,12 @@
     }
 }
 
-@media all and (max-width: 720px) {
+@media  all and (max-width: 1279px) {
     .our-clients {
-        width: auto;
-        padding-top: 0;
-        padding-bottom: 68px;
-        margin: 0 -10px;
-        &__title {
-            font-size: 20px;
-            margin: 0 0 20px 0;
-            color: #3C3C3C;
-        }
         &__list {
             width: 100%;
             div {
-                width: calc(100%/6);
+                //width: calc(100%/5);
                 min-width: 0;
                 margin: 15px 0 15px 0;
             }
@@ -67,9 +58,12 @@
     }
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 720px) {
     .our-clients {
-        padding-bottom: 20px;
+        width: auto;
+        padding-top: 0;
+        padding-bottom: 68px;
+        margin: 0 -10px;
         &__title {
             font-size: 20px;
             margin: 0 0 20px 0;
@@ -86,5 +80,38 @@
                 width: 53%;
             }
         }
+        //&__list {
+        //    width: 100%;
+        //    div {
+        //        width: calc(100%/6);
+        //        min-width: 0;
+        //        margin: 15px 0 15px 0;
+        //    }
+        //    img {
+        //        width: 53%;
+        //    }
+        //}
+    }
+}
+
+@media all and (max-width: 320px) {
+    .our-clients {
+        padding-bottom: 20px;
+        &__title {
+            font-size: 20px;
+            margin: 0 0 20px 0;
+            color: #3C3C3C;
+        }
+        //&__list {
+        //    width: 100%;
+        //    div {
+        //        width: calc(100%/3);
+        //        min-width: 0;
+        //        margin: 21px 0 22px 0;
+        //    }
+        //    img {
+        //        width: 53%;
+        //    }
+        //}
     }
 }
