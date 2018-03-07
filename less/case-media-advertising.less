@@ -18,17 +18,25 @@
         }
     }
     &_avtodok {
-        padding: 123px 0 115px 0;
+        padding: 123px 0 123px 0;
         .case-media-advertising__title {
             margin: 0 0 44px 0;
         }
         .case-media-advertising__row {
             display: flex;
             justify-content: space-between;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             margin-bottom: 80px;
         }
-
+        .case-media-advertising__view-pc {
+            width: 53%;
+            img {
+                width: 100%;
+                max-width: 652px;
+                min-width: 450px;
+                box-sizing: border-box;
+            }
+        }
         .case-media-advertising__row_mobile {
             margin-bottom: 0;
             .case-media-advertising__title {
@@ -85,6 +93,9 @@
         &_pichugovo {
             padding-bottom: 148px;
         }
+        &_avtodok {
+            padding: 123px 0 123px 0;
+        }
     }
 
 }
@@ -92,11 +103,124 @@
 @media all and (max-width: 720px) {
     .case-media-advertising {
         &_avtodok {
-            padding-top: 46px;
+            padding-top: 40px;
             padding-bottom: 67px;
             h3 {
                 margin: 0 0 10px 0;
                 font-size: 25px;
+            }
+
+            .case-media-advertising__title {
+                margin-bottom: 116px;
+            }
+
+            .case-media-advertising__description {
+                width: 50%;
+                margin: 0;
+            }
+            .case-media-advertising__tags {
+                margin: 0;
+                .text-size-9 {
+                    font-size: 10px;
+                    line-height: 0.8;
+                }
+
+
+                .text-size-10 {
+                    font-size: 13px;
+                    line-height: 0.8;
+                }
+
+                .text-size-11 {
+                    font-size: 15px;
+                    line-height: 0.8;
+                }
+
+
+                .text-size-12 {
+                    font-size: 16px;
+                    line-height: 0.8;
+                }
+
+                .text-size-13 {
+                    font-size: 21px;
+                    line-height: 0.8;
+                }
+
+                .text-size-14 {
+                    font-size: 23px;
+                    line-height: 0.8;
+                }
+            }
+            .case-media-advertising__view-pc {
+                max-width: none;
+                margin-left: -235px;
+                width: 560px;
+                align-self: center;
+                img {
+                    max-width: none;
+                    border-width: 20px 95px 31px 95px;
+                }
+            }
+
+            .case-media-advertising__row_first {
+                margin-bottom: 50px;
+                flex-direction: row-reverse;
+                flex-wrap: nowrap;
+                .case-media-advertising__text {
+                    font-size: 13px;
+                    width: 85%;
+                    line-height: 1.35;
+                    position: absolute;
+                    top: 40px;
+                    left: 11px;
+                }
+            }
+            .case-media-advertising__row_second {
+                margin-bottom: 42px;
+                flex-wrap: wrap;
+                .case-media-advertising__title {
+                    margin-bottom: 12px;
+                }
+                .case-media-advertising__description {
+                    width: 100%;
+                }
+                .case-media-advertising__text {
+                    width: 80%;
+                    margin-bottom: 15px;
+                    font-size: 13px;
+                    line-height: 1.35;
+                }
+                .case-media-advertising__view-pc {
+                    width: 100%;
+                    min-width: 0;
+                    max-width: 580px;
+                    margin: 0 auto;
+                    img {
+                        min-width: 0;
+                    }
+                }
+            }
+            .case-media-advertising__row_mobile{
+                .case-media-advertising__title {
+                    margin-bottom: 12px;
+                }
+                .case-media-advertising__text {
+                    margin-bottom: 15px;
+                    font-size: 13px;
+                    line-height: 1.35;
+                }
+                .case-media-advertising__view-mobile {
+                    width: 38%;
+                    img {
+                        width: 147px;
+                        margin-top: 50px;
+                        border-width: 42px 10px 39px 10px;;
+                    }
+                }
+            }
+            .case-media-advertising__text {
+                width: 90%;
             }
         }
     }
@@ -105,6 +229,107 @@
 @media all and (max-width: 320px) {
     .case-media-advertising {
         &_avtodok {
+            padding-bottom: 45px;
+            overflow: hidden;
+            .case-media-advertising__title {
+                margin-bottom: 15px;
+            }
+            .case-media-advertising__row_first {
+                margin-bottom: 28px;
+                flex-wrap: wrap;
+                .case-media-advertising__description {
+                    width: 100%;
+                }
+                .case-media-advertising__view-pc {
+
+                }
+                .case-media-advertising__text {
+                    position: static;
+                    width: 100%;
+                    margin-bottom: 19px;
+                    line-height: 1.35;
+                }
+                .case-media-advertising__tags {
+                    line-height: 1.35;
+                    margin-bottom: 10px;
+                    .text-size-9 {
+                        font-size: 8px;
+                        line-height: 0.6;
+                    }
+
+
+                    .text-size-10 {
+                        font-size: 11px;
+                        line-height: 0.6;
+                    }
+
+                    .text-size-11 {
+                        font-size: 13px;
+                        line-height: 0.6;
+                    }
+
+
+                    .text-size-12 {
+                        font-size: 14px;
+                        line-height: 0.6;
+                    }
+
+                    .text-size-13 {
+                        font-size: 19px;
+                        line-height: 0.6;
+                    }
+
+                    .text-size-14 {
+                        font-size: 21px;
+                        line-height: 0.6;
+                    }
+                }
+                .case-media-advertising__view-pc {
+                    min-width: 0;
+                    max-width: 580px;
+                    margin-left: -300px;
+                    width: 650px;
+
+                    img {
+                        min-width: 0;
+                    }
+                }
+            }
+
+            .case-media-advertising__row_second {
+                .case-media-advertising__description {
+                    margin-bottom: 10px;
+                }
+                .case-media-advertising__text {
+                    width: 100%;
+                }
+                .case-media-advertising__view-pc {
+                    min-width: 0;
+                    max-width: 580px;
+                    margin-right: -300px;
+                    width: 650px;
+                    img {
+                        min-width: 0;
+                    }
+                }
+            }
+            .case-media-advertising__row_mobile {
+                flex-wrap: wrap;
+                .case-media-advertising__description {
+                    width: 100%;
+                }
+                .case-media-advertising__text {
+                    width: 100%;
+                    margin-bottom: 8px;
+                }
+                .case-media-advertising__view-mobile {
+                    width: 100%;
+                    text-align: center;
+                    img {
+                        margin-top: 10px;
+                    }
+                }
+            }
             .adv-con__caption {
                 width: 100%;
             }

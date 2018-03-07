@@ -225,13 +225,30 @@
             margin: 0;
         }
         .case-advertising-subresult__value {
+            font-size: 34px;
             color: #343434;
         }
         .case-advertising-subresult__description {
             color: #343434;
         }
         .case-advertising-result__subdescription {
+            width: 360px;
             color: #343434;
+            margin: 14px 0 5px;
+            font-family: HelveticaNeueCyrMedium, sans-serif;
+            font-size: 23px;
+            line-height: 1.2;
+        }
+
+        .case-advertising-subresult__sub-wrap {
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-content: center;
         }
     }
 }
@@ -331,12 +348,17 @@
             }
         }
         &_avtodok {
+            overflow: hidden;
             padding-bottom: 0;
             h2 {
+                max-width: 55%;
                 margin: 50px 0 20px 0;
                 font-size: 25px;
             }
-
+            .case-advertising-result__bg {
+                height: 700px;
+                width: auto;
+            }
             .case-advertising-result__list {
                 li {
                     margin: 0 0 10px 0;
@@ -345,6 +367,31 @@
                         left: 0;
                     }
                 }
+            }
+            .case-advertising-result__row {
+                margin-bottom: 27px;
+            }
+            .case-advertising-result__row-wrap {
+                width: 77%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .case-advertising-subresult__item {
+                    &:last-child {
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .case-advertising-result__box {
+                width: 82%;
+                .case-advertising-result__item {
+                    &:last-child {
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .case-advertising-result__item {
+                width: 265px;
             }
             .case-advertising-result__pretext {
                 font-size: 20px;
@@ -358,6 +405,11 @@
             }
             .case-advertising-result__subdescription {
                 font-size: 20px;
+                //position: absolute;
+                width: 230px;
+                margin: 0;
+                //right: 24%;
+                //top: 130px;
             }
         }
 
@@ -377,6 +429,25 @@
             .case-advertising-result__bg {
                 width: auto;
                 height: 595px;
+            }
+            h2 {
+                max-width: none;
+            }
+
+            .case-advertising-result__row-wrap {
+                .case-advertising-result__description {
+                    margin-bottom: 18px;
+                }
+            }
+            .case-advertising-result__box {
+                flex-wrap: wrap;
+                .case-advertising-result__item {
+                    width: 100%;
+                    margin: 0 0 15px 0;
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
             }
         }
     }
