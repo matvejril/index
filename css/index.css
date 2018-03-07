@@ -731,7 +731,6 @@ template {
     max-width: 1200px;
   }
 }
-/*avtodok*/
 .header {
   position: relative;
   display: none;
@@ -809,8 +808,12 @@ template {
   padding: 0 10px 0 10px;
   position: relative;
 }
+.header-slider {
+  overflow: hidden;
+}
 .header-slider .slick-slide {
   height: auto;
+  overflow: hidden;
 }
 .header-slider_about-us .slick-slide {
   height: auto;
@@ -875,7 +878,7 @@ template {
     max-width: 1220px;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 1280px) {
   .header__top {
     top: 25px;
   }
@@ -884,7 +887,7 @@ template {
     margin-left: 12px;
   }
   .header__content {
-    top: 44%;
+    top: 30%;
   }
   .header__slogan {
     font-size: 16px;
@@ -896,12 +899,12 @@ template {
     max-height: none;
   }
   .header .header-slide img {
-    height: 447px;
+    height: 445px;
     width: auto;
     outline: none;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 719px) {
   .header__top {
     top: 25px;
   }
@@ -921,11 +924,8 @@ template {
   .header__about-us {
     font-size: 14px;
   }
-  .header-slide {
-    max-height: none;
-  }
-  .header-slide img {
-    height: 445px;
+  .header .header-slide img {
+    height: 447px;
     width: auto;
     outline: none;
   }
@@ -993,12 +993,12 @@ template {
     width: 53%;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 719px) {
   .our-clients {
     width: auto;
     padding-top: 0;
     padding-bottom: 68px;
-    margin: 0 -10px;
+    margin: 0;
   }
   .our-clients__title {
     font-size: 20px;
@@ -1006,7 +1006,8 @@ template {
     color: #3C3C3C;
   }
   .our-clients__list {
-    width: 100%;
+    margin: 0 -10px;
+    width: auto;
   }
   .our-clients__list div {
     width: -webkit-calc(33.33333333%);
@@ -1114,7 +1115,7 @@ template {
     font-size: 30px;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 719px) {
   .feedback__title {
     font-size: 19px;
     color: #3C3C3C;
@@ -1289,7 +1290,7 @@ template {
     padding: 63px 0 30px 0;
   }
 }
-@media all and (max-width: 1152px) {
+@media all and (max-width: 1280px) {
   .footer h4 {
     margin-bottom: 25px;
   }
@@ -1312,7 +1313,7 @@ template {
     text-align: center;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 1280px) {
   .footer {
     padding-top: 50px;
   }
@@ -1429,7 +1430,7 @@ template {
     padding-left: 5px;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 719px) {
   .main-tab__nav {
     margin: 0;
     -webkit-box-pack: justify;
@@ -1470,12 +1471,12 @@ template {
   max-width: 367px;
   margin-right: 40px;
 }
-.services__logo .services__logo_md {
+.services__logo .sm {
+  display: none;
+}
+.services__logo .md {
   width: 100%;
   display: block;
-}
-.services__logo .services__logo_sm {
-  display: none;
 }
 .services__items {
   display: -webkit-box;
@@ -1520,13 +1521,16 @@ template {
   }
 }
 @media all and (max-width: 1279px) {
-  .services .services__items {
+  .services__items {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
   }
+  .services__items li {
+    font-size: 17px;
+  }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 719px) {
   .services {
     width: 86%;
     padding: 33px 0 24px 0;
@@ -1552,7 +1556,7 @@ template {
   }
   .services .services__list_digital {
     width: auto;
-    margin: 0 0 0 16px;
+    margin: 0;
   }
   .services__logo {
     margin: 0;
@@ -1565,12 +1569,14 @@ template {
     max-width: 180px;
     margin: 0 0 20px 0;
   }
-  .services .services__logo_sm {
+  .services__logo .md {
+    display: none;
+  }
+  .services__logo .sm {
+    width: 100%;
+    max-width: 290px;
     display: block;
     margin: 0 auto 20px auto;
-  }
-  .services .services__logo_md {
-    display: none;
   }
 }
 @media all and (max-width: 320px) {
@@ -1643,7 +1649,7 @@ template {
     width: 50%;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 719px) {
   .our-works {
     margin: 0 -10px;
     width: auto;
@@ -1967,7 +1973,7 @@ template {
     padding: 150px 0 10px 0;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 1280px) {
   .case-tab {
     margin: 0;
     -webkit-box-pack: justify;
@@ -1985,7 +1991,10 @@ template {
     left: 5px;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 720px) {
+  .case-tab {
+    padding-top: 110px;
+  }
 }
 .case-nav {
   padding: 10px 0 65px 0;
@@ -2102,7 +2111,7 @@ template {
     padding: 10px 0 15px 0;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 719px) {
   .case-nav {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -2326,7 +2335,7 @@ template {
     color: #313131;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 1280px) {
   .case-banner {
     overflow: hidden;
   }
@@ -2378,7 +2387,7 @@ template {
     font-size: 16px;
   }
 }
-@media all and (max-width: 320px) {
+@media all and (max-width: 720px) {
   .case-banner_inoton .case-banner__bg {
     height: 515px;
   }
@@ -2445,7 +2454,7 @@ template {
     padding: 125px 0 130px 0;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 719px) {
   .case-video video {
     width: 60%;
     max-width: 762px;
@@ -2628,7 +2637,7 @@ template {
     margin: 0 0 17px 0;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 719px) {
   .case-main-task h2 {
     margin-bottom: 12px;
     font-size: 25px;
@@ -2859,7 +2868,7 @@ template {
     padding-bottom: 95px;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 719px) {
   .case-landing-page .case-video {
     padding-top: 32px;
     padding-bottom: 25px;
@@ -2898,6 +2907,10 @@ template {
 }
 .digital-marketing__bg {
   width: 100%;
+}
+.digital-marketing__bg-sm {
+  width: 100%;
+  display: none;
 }
 .digital-marketing h2 {
   font-family: HelveticaNeueCyrBold, sans-serif;
@@ -3059,6 +3072,7 @@ template {
 .digital-marketing_avtodok p {
   font-family: HelveticaNeueCyrRoman, sans-serif;
   color: #ffffff;
+  width: 60%;
 }
 .case-main-task__title {
   color: #343434;
@@ -3126,17 +3140,32 @@ template {
     margin-bottom: 16px;
   }
   .digital-marketing_avtodok p {
-    max-width: 80%;
+    width: 85%;
     font-size: 13px;
     margin: 0 0 18px 0;
     line-height: 1.35;
   }
   .digital-marketing_avtodok .digital-marketing__bg {
+    display: none;
+  }
+  .digital-marketing_avtodok .digital-marketing__bg-sm {
+    display: block;
     height: 650px;
+    width: 100%;
   }
   .case-main-task__title {
     font-size: 21px;
     margin: 0 0 13px 0;
+  }
+}
+@media all and (max-width: 320px) {
+  .digital-marketing_avtodok p {
+    max-width: 95%;
+  }
+  .digital-marketing_avtodok .digital-marketing__bg {
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
   }
 }
 .case-media-advertising {
@@ -3164,6 +3193,7 @@ template {
   margin: 0 0 44px 0;
 }
 .case-media-advertising_avtodok .case-media-advertising__row {
+  overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3242,7 +3272,7 @@ template {
     padding: 123px 0 123px 0;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 719px) {
   .case-media-advertising_avtodok {
     padding-top: 40px;
     padding-bottom: 67px;
@@ -3844,7 +3874,7 @@ template {
     font-size: 14px;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 719px) {
   .case-advertising-result_inoton h2 {
     max-width: none;
     margin: 60px 0 30px 0;
@@ -3957,7 +3987,7 @@ template {
   }
   .case-advertising-result_avtodok .case-advertising-result__bg {
     width: auto;
-    height: 595px;
+    height: 735px;
   }
   .case-advertising-result_avtodok h2 {
     max-width: none;
@@ -4500,7 +4530,7 @@ template {
 .case-main-buyers .case-main-buyers__pre-price {
   font-size: 32px;
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 719px) {
   .case-main-buyers {
     margin-bottom: 62px;
   }
@@ -4644,7 +4674,7 @@ template {
   font-size: 25.5px;
   color: #2a2a2a;
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 719px) {
   .case-adv-optimization {
     padding-bottom: 62px;
   }
@@ -5110,7 +5140,7 @@ body {
     font-size: 30px;
   }
 }
-@media all and (max-width: 720px) {
+@media all and (max-width: 719px) {
   .other-projects {
     padding: 80px 0 80px 0;
   }

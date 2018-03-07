@@ -10,6 +10,10 @@
     &__bg {
         width: 100%;
     }
+    &__bg-sm {
+        width: 100%;
+        display: none;
+    }
     h2 {
         font-family: HelveticaNeueCyrBold, sans-serif;
         font-size: 61px;
@@ -166,6 +170,7 @@
             font-family: HelveticaNeueCyrRoman, sans-serif;
             color: #ffffff;
             //font-size: 22px;
+            width: 60%;
         }
     }
 }
@@ -243,19 +248,39 @@
                 margin-bottom: 16px;
             }
             p {
-                max-width: 80%;
+                width: 85%;
                 font-size: 13px;
                 margin: 0 0 18px 0;
                 line-height: 1.35;
             }
             .digital-marketing__bg {
+                display: none;
+                //height: 650px;
+                //width: auto;
+            }
+            .digital-marketing__bg-sm {
+                display: block;
                 height: 650px;
+                width: 100%;
             }
         }
     }
     .case-main-task__title {
         font-size: 21px;
         margin: 0 0 13px 0;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .digital-marketing {
+        &_avtodok {
+            p {
+                max-width: 95%;
+            }
+            .digital-marketing__bg {
+                transform: translate(-50%, 0);
+            }
+        }
     }
 }
 
