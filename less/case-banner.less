@@ -191,18 +191,9 @@
 @media all and (max-width: 1280px) {
     .case-banner {
         overflow: hidden;
-        .case-banner__bg {
-            display: block;
-            //position: relative;
-            //right: 100%;
-            margin: 0 auto;
-            width: auto;
-            height: 435px;
-        }
         &__content p {
             font-size: 19px;
         }
-
         &_inoton {
             padding-bottom: 20px;
             margin-bottom: 0;
@@ -228,10 +219,6 @@
         }
 
         &_avtodok {
-            .case-banner__bg {
-                width: auto;
-                height: 340px;
-            }
             .case-banner__content {
                 padding-top: 47px;
             }
@@ -248,12 +235,32 @@
     }
 }
 
-@media all and (max-width: 720px) {
+@media all and (max-width: 768px) {
     .case-banner {
         &_inoton {
             .case-banner__bg {
-                height: 515px;
+                display: block;
+                position: relative;
+                margin: 0 auto;
+                width: auto;
+                height: 430px;
             }
+        }
+    }
+}
+
+@media all and (max-width: 480px) {
+    .case-banner {
+        &_avtodok {
+            .case-banner__bg {
+                width: auto;
+                height: 340px;
+            }
+        }
+        &_inoton {
+            //.case-banner__bg {
+            //    height: 515px;
+            //}
             .case-banner__logo {
                 margin-bottom: 43px;
             }

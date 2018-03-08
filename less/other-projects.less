@@ -16,6 +16,7 @@
     //width: 48%;
     align-items: center;
     flex-wrap: wrap;
+    transform: scale(1.2);
   }
   &__item {
     display: inline-block;
@@ -49,32 +50,32 @@
 
 @media all and (max-width: 1800px) {
   .other-projects {
+    &__list {
+      transform: scale(1);
+    }
     h3 {
       font-size: 30px;
     }
   }
 }
 
-@media all and (max-width: 719px){
+@media all and (max-width: 768px){
   .other-projects {
+    h3 {
+      font-size: 20px;
+    }
+    &__list {
+      width: 167%;
+      transform-origin: 0;
+      transform: scale(0.6);
+    }
     padding: 80px 0 80px 0;
   }
 }
 
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 480px) {
   .other-projects {
     padding: 58px 0 80px 0;
-    h3 {
-      font-size: 20px;
-    }
-
-    &__item {
-      max-width: 60px;
-      text-align: center;
-    }
-    &__item-img {
-      width: 100%;
-    }
   }
 }
