@@ -10,10 +10,38 @@
     slider.slick({
         arrows: false,
         draggable: false,
-        // touchMove: false,
         swipe: false,
         speed: 300
     });
+
+    var hashPage = window.location.hash;
+
+    if (hashPage) {
+        setState();
+        // var clearHash = hashPage.
+        // clickedNavItem = clickedSlide.getAttribute('data-division-carousel-nav-item');
+        // if (clearHash === ) {
+        //
+        // }
+        // switch () {
+        //     case '':
+        //         break
+        // }
+        // removeHash();
+    } else {
+        toFirstState()
+    }
+
+    function toFirstState() {
+        window.location.hash = "#digital";
+        slider.slick('slickGoTo', 1);
+
+    }
+
+    function setState() {
+    }
+
+
 
     // Навешивание событий на навигацию
 
@@ -82,7 +110,7 @@
                 break;
             default:
                 footerBg.className = 'footer';
-                footerBg.style.backgroundImage = "url(" + footer_images['main-academy'] + ")";
+                footerBg.style.backgroundImage = "url(" + footer_images['main-digital'] + ")";
         }
     }
 }());

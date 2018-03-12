@@ -8,9 +8,9 @@
 
     function resizeServices() {
         if (serviceBlock) {
-            if ($(window).width() > 320) {
+            if ($(window).width() > 480) {
                 resizeServicesMd()
-            } else if ($(window).width() <= 320) {
+            } else if ($(window).width() <= 480) {
                 resizeServicesSm()
             }
         }
@@ -53,7 +53,6 @@
         }
         if ($(window).width() <= 1280) {
             for (var e = 0; e < serviceList.length; e++) {
-                // console.log(serviceList)
                 serviceList[e].style.width = 100 + '%';
             }
         }

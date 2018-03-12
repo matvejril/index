@@ -875,6 +875,11 @@ template {
     max-width: 1220px;
   }
 }
+@media all and (max-width: 1280px) {
+  .header__about-us {
+    margin-right: 15px;
+  }
+}
 @media all and (max-width: 768px) {
   .header__top {
     top: 25px;
@@ -956,7 +961,7 @@ template {
   width: calc(100%/5);
   min-width: 185px;
   text-align: center;
-  margin: 50px 0 50px 0;
+  margin: 90px 0 90px 0;
 }
 .our-clients__list img {
   display: inline;
@@ -970,7 +975,10 @@ template {
     font-size: 30px;
   }
   .our-clients__list div {
-    margin: 40px 0 40px 0;
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    margin: 51px 0 51px 0;
   }
 }
 @media all and (max-width: 1280px) {
@@ -979,10 +987,10 @@ template {
   }
   .our-clients__list div {
     min-width: 0;
-    margin: 15px 0 15px 0;
-  }
-  .our-clients__list img {
-    width: 53%;
+    margin: -6px 0 -6px 0;
+    -webkit-transform: scale(0.45);
+    -ms-transform: scale(0.45);
+    transform: scale(0.45);
   }
 }
 @media all and (max-width: 768px) {
@@ -999,9 +1007,7 @@ template {
   }
   .our-clients__list {
     margin: 0 -10px;
-  }
-  .our-clients__list div {
-    margin: 21px 0 22px 0;
+    width: auto;
   }
 }
 @media all and (max-width: 480px) {
@@ -1017,10 +1023,6 @@ template {
     width: -webkit-calc(33.33333333%);
     width: calc(33.33333333%);
     min-width: 0;
-    margin: 21px 0 22px 0;
-  }
-  .our-clients__list img {
-    width: 53%;
   }
 }
 .feedback {
@@ -1430,7 +1432,7 @@ template {
     margin: 0;
   }
   .main-tab__nav li {
-    margin: 0;
+    margin: 0 6px;
     font-size: 17px;
   }
   .main-tab__nav li img {
@@ -1520,11 +1522,8 @@ template {
 }
 @media all and (max-width: 768px) {
   .services {
-    width: 86%;
+    width: 90%;
     padding: 33px 0 24px 0;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
   }
   .services__item {
     line-height: 1.3;
@@ -1532,7 +1531,7 @@ template {
   }
   .services__items {
     min-width: 36%;
-    width: auto;
+    width: 25%;
     margin: 0 auto;
   }
   .services__items li {
@@ -1548,14 +1547,16 @@ template {
   }
   .services__logo {
     margin: 0;
-    width: 100%;
+    width: -webkit-calc(40%);
+    width: calc(40%);
     max-width: none;
     max-height: none;
     text-align: center;
+    padding-right: 10px;
   }
   .services__logo img {
     max-width: 180px;
-    margin: 0 0 20px 0;
+    margin: 0 auto 20px auto;
   }
   .services__logo .md {
     display: none;
@@ -1567,9 +1568,22 @@ template {
     margin: 0 auto 20px auto;
   }
 }
-@media all and (max-width: 420px) {
-  .services__logo img {
-    margin: 0 0 54px 0;
+@media all and (max-width: 480px) {
+  .services {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .services__logo {
+    width: 100%;
+    padding: 0;
+  }
+  .services__logo .sm {
+    margin-bottom: 38px;
   }
   .services__items {
     width: 100%;
@@ -1889,10 +1903,10 @@ template {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -1961,6 +1975,7 @@ template {
 @media all and (max-width: 768px) {
   .case-tab {
     margin: 0;
+    padding: 115px 0 0 0;
   }
   .case-tab li {
     margin: 0;
@@ -2007,7 +2022,7 @@ template {
 }
 .case-nav__item {
   display: block;
-  margin: 0 44px;
+  margin: 0 44px 15px 44px;
 }
 .case-nav__item:hover .case-nav__item-img {
   -webkit-filter: none;
@@ -2097,27 +2112,16 @@ template {
 }
 @media all and (max-width: 768px) {
   .case-nav {
+    padding: 0 0 30px 0;
     -webkit-transform: scale(0.6);
     -ms-transform: scale(0.6);
     transform: scale(0.6);
     width: 169%;
-    padding-bottom: 15px;
-    margin: 0 -15px;
+    margin: 0 -10px;
+    min-height: 85px;
   }
   .case-nav__item {
-    margin: 0 15px;
-  }
-}
-@media all and (max-width: 480px) {
-  .case-nav {
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: 0 -6px;
-  }
-  .case-nav__item {
-    margin: 0 6px;
+    margin: 0 20px 20px 25px;
   }
 }
 .index-review {
@@ -3028,10 +3032,10 @@ template {
   width: 100%;
   overflow: hidden;
 }
-.digital-marketing_biovestin .digital-marketing__item_application {
+.digital-marketing_biovestin .digital-marketing__item_antibiotic {
   width: 340px;
 }
-.digital-marketing_biovestin .digital-marketing__item_application h3:after {
+.digital-marketing_biovestin .digital-marketing__item_antibiotic h3:after {
   content: url(../images/cases/biovestine/thread-3.png);
   display: block;
   width: 100%;
@@ -5102,6 +5106,14 @@ body {
 .other-projects__item:hover .other-projects__item-img {
   -webkit-filter: none;
   filter: none;
+}
+.other-projects .item_active .other-projects__item-front {
+  opacity: 1;
+}
+.other-projects .item_active .other-projects__item-front .other-projects__item-img {
+  -webkit-filter: none;
+  filter: none;
+  width: auto;
 }
 .other-projects__item-front {
   display: inline-block;
