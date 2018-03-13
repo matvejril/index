@@ -880,7 +880,7 @@ template {
     margin-right: 15px;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .header__top {
     top: 25px;
   }
@@ -974,26 +974,18 @@ template {
   .our-clients__title {
     font-size: 30px;
   }
-  .our-clients__list div {
+  .our-clients__list {
+    width: auto;
+    margin: -215px -13%;
     -webkit-transform: scale(0.7);
     -ms-transform: scale(0.7);
     transform: scale(0.7);
-    margin: 51px 0 51px 0;
+  }
+  .our-clients__list div {
+    margin: 95px 0 95px 0;
   }
 }
 @media all and (max-width: 1280px) {
-  .our-clients__list {
-    width: 100%;
-  }
-  .our-clients__list div {
-    min-width: 0;
-    margin: -6px 0 -6px 0;
-    -webkit-transform: scale(0.45);
-    -ms-transform: scale(0.45);
-    transform: scale(0.45);
-  }
-}
-@media all and (max-width: 768px) {
   .our-clients {
     width: auto;
     padding-top: 0;
@@ -1006,8 +998,14 @@ template {
     color: #3C3C3C;
   }
   .our-clients__list {
-    margin: 0 -10px;
+    margin: -268px -64%;
     width: auto;
+    -webkit-transform: scale(0.45);
+    -ms-transform: scale(0.45);
+    transform: scale(0.45);
+  }
+  .our-clients__list div {
+    margin: 50px 0 50px 0;
   }
 }
 @media all and (max-width: 480px) {
@@ -1111,7 +1109,7 @@ template {
     font-size: 30px;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .feedback__title {
     font-size: 19px;
     color: #3C3C3C;
@@ -1426,7 +1424,7 @@ template {
     padding-left: 5px;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .main-tab__nav {
     padding-bottom: 5px;
     margin: 0;
@@ -1515,12 +1513,12 @@ template {
 }
 @media all and (max-width: 1280px) {
   .services__items {
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
+    -webkit-align-self: self-start;
+    -ms-flex-item-align: self-start;
+    align-self: self-start;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .services {
     width: 90%;
     padding: 33px 0 24px 0;
@@ -1553,6 +1551,9 @@ template {
     max-height: none;
     text-align: center;
     padding-right: 10px;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
   }
   .services__logo img {
     max-width: 180px;
@@ -1643,7 +1644,7 @@ template {
     padding-top: 52px;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .our-works {
     width: 95%;
     margin: 0 auto;
@@ -1972,7 +1973,7 @@ template {
     left: 4px;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .case-tab {
     margin: 0;
     padding: 115px 0 0 0;
@@ -2110,7 +2111,7 @@ template {
 .case-content_active {
   display: block;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .case-nav {
     padding: 0 0 30px 0;
     -webkit-transform: scale(0.6);
@@ -2372,6 +2373,9 @@ template {
     width: auto;
     height: 340px;
   }
+  .case-banner_inoton .case-banner__bg {
+    height: 515px;
+  }
   .case-banner_inoton .case-banner__logo {
     margin-bottom: 43px;
   }
@@ -2435,7 +2439,7 @@ template {
     padding: 125px 0 130px 0;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .case-video {
     overflow: hidden;
   }
@@ -2621,7 +2625,7 @@ template {
     margin: 0 0 17px 0;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .case-main-task h2 {
     margin-bottom: 12px;
     font-size: 25px;
@@ -3114,7 +3118,7 @@ template {
     margin-top: 60px;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .digital-marketing_avtodok {
     overflow: hidden;
   }
@@ -3129,6 +3133,12 @@ template {
     margin: 0 0 18px 0;
     line-height: 1.35;
   }
+  .case-main-task__title {
+    font-size: 21px;
+    margin: 0 0 13px 0;
+  }
+}
+@media all and (max-width: 768px) {
   .digital-marketing_avtodok .digital-marketing__bg {
     display: none;
   }
@@ -3137,12 +3147,8 @@ template {
     height: 650px;
     width: 100%;
   }
-  .case-main-task__title {
-    font-size: 21px;
-    margin: 0 0 13px 0;
-  }
 }
-@media all and (max-width: 380px) {
+@media all and (max-width: 480px) {
   .digital-marketing_avtodok p {
     max-width: 95%;
   }
@@ -3256,7 +3262,7 @@ template {
     padding: 123px 0 123px 0;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .case-media-advertising_avtodok {
     padding-top: 40px;
     padding-bottom: 67px;
@@ -3858,7 +3864,7 @@ template {
     font-size: 14px;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .case-advertising-result_inoton h2 {
     max-width: none;
     margin: 60px 0 30px 0;
@@ -4514,7 +4520,7 @@ template {
 .case-main-buyers .case-main-buyers__pre-price {
   font-size: 32px;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .case-main-buyers {
     margin-bottom: 62px;
   }
@@ -4658,7 +4664,7 @@ template {
   font-size: 25.5px;
   color: #2a2a2a;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .case-adv-optimization {
     padding-bottom: 62px;
   }
@@ -5059,6 +5065,7 @@ body {
 }
 .other-projects {
   padding: 132px 0 122px 0;
+  overflow: hidden;
 }
 .other-projects h3 {
   font-family: HelveticaNeueCyrBold, sans-serif;
@@ -5140,7 +5147,7 @@ body {
     font-size: 30px;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1280px) {
   .other-projects {
     padding: 80px 0 80px 0;
   }
@@ -5345,6 +5352,9 @@ select:hover,
 button:hover,
 textarea:hover {
   cursor: pointer;
+}
+.cases {
+  overflow: hidden;
 }
 .text-size-8 {
   font-size: 19px;

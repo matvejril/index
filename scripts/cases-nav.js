@@ -7,6 +7,7 @@
         tabLinks[i].addEventListener('click', changeTab);
     }
 
+
     function changeTab() {
         var tabClick = this;
         var tabClickData = tabClick.getAttribute('data-nav');
