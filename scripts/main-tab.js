@@ -13,61 +13,60 @@
     });
 
 
-    // Проверка хеша
-    var hashPage = window.location.hash;
-    var hashPageValue = hashPage.substring(1);
+    var tabLinks = document.querySelectorAll('.main-tab__nav-item');
+    var tabContent = document.querySelectorAll('.main-tab__content');
 
+    var hashPage = window.location.hash;
+
+    // Навешивание событий на навигацию
+    for (var i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].addEventListener('click', changeTabState);
+    }
+
+    // Проверка хеша
     if (hashPage) {
-        changeTabState()
+        transitionTabState(hashPage);
     } else {
         setDefaultState()
     }
 
     function setDefaultState() {
         var defaultStateValue = "main-digital";
+        document.querySelector('.main-tab__nav-item_digital').classList.add('main-tab__nav-item_active');
         setHash(defaultStateValue);
         changeTabSlide(defaultStateValue);
         changeTabContent(defaultStateValue);
-        // changeTabFooter(defaultStateValue);
+        changeTabFooter(defaultStateValue);
     }
 
-    // Навешивание событий на навигацию
-    var tabLinks = document.querySelectorAll('.main-tab__nav-item');
-    var tabContent = document.querySelectorAll('.main-tab__content');
-    for (var i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].addEventListener('click', changeTabState);
+    function transitionTabState(hashPage) {
+        var getTabStateValue = hashPage.replace("#","main-");
+        // console.log(getTabStateValue);
+        for (var m = 0; m < tabLinks.length; m++) {
+            tabLinks[m].classList.remove('main-tab__nav-item_active');
+            var tabOverlapData = tabLinks[m].getAttribute('data-tab');
+            if (getTabStateValue === tabOverlapData) {
+                tabLinks[m].classList.add('main-tab__nav-item_active');
+                changeTabSlide(getTabStateValue);
+                changeTabContent(getTabStateValue);
+                changeTabFooter(getTabStateValue);
+            }
+        }
     }
 
     function changeTabState(e) {
-        var tabLinks = document.querySelectorAll('.main-tab__nav-item');
-        var tabClickHash = 'main-' + hashPageValue;
-        for (var m = 0; m < tabLinks.length; m++) {
-            tabLinks[m].classList.remove('main-tab__nav-item_active');
-            var tabClickData = tabLinks[m].getAttribute('data-tab');
-            if (tabClickHash === tabClickData) {
-                tabLinks[m].classList.add('main-tab__nav-item_active');
-                changeTabSlide(tabClickData);
-                changeTabContent(tabClickData);
-                // changeTabFooter(tabClickData);
+        var tabClick = e.target;
+        var tabClickValue = tabClick.getAttribute('data-tab');
+        var tabClickTag = tabClick.tagName;
+        setHash(tabClickValue);
+        if (tabClickTag === "LI" && !tabClick.classList.contains('main-tab__nav-item_active')) {
+            for (var i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove('main-tab__nav-item_active');
             }
-        }
-        if (e) {
-            var tabClick = e.target;
-            tabClickData = tabClick.getAttribute('data-tab');
-            var tabClickTag = tabClick.tagName;
-
-            setHash(tabClickData);
-
-            if (tabClickTag === "LI" && !tabClick.classList.contains('main-tab__nav-item_active')) {
-                for (var i = 0; i < tabLinks.length; i++) {
-                    tabLinks[i].classList.remove('main-tab__nav-item_active');
-                }
-                tabClick.classList.add('main-tab__nav-item_active');
-                console.log(tabClickData);
-                changeTabSlide(tabClickData);
-                changeTabContent(tabClickData);
-                // changeTabBg(tabClickData);
-            }
+            tabClick.classList.add('main-tab__nav-item_active');
+            changeTabSlide(tabClickValue);
+            changeTabContent(tabClickValue);
+            changeTabFooter(tabClickValue);
         }
     }
 
@@ -78,8 +77,6 @@
 
     // Смена контента
     function changeTabContent(data) {
-        var tabContent = document.querySelectorAll('.main-tab__content');
-        var tabLinks = document.querySelectorAll('.main-tab__nav-item');
         for (var i = 0; i < tabContent.length; i++) {
             if (tabContent[i].classList.contains('main-tab__content_active')) {
                 tabContent[i].classList.remove('main-tab__content_active');
@@ -95,25 +92,25 @@
         var slideIndex;
         switch (tabClickData) {
             case 'main-branding':
-                slideIndex = 1;
+                slideIndex = 0;
                 break;
             case 'main-digital':
-                slideIndex = 2;
+                slideIndex = 1;
                 break;
             case 'main-strategy':
-                slideIndex = 3;
+                slideIndex = 2;
                 break;
             case 'main-creative':
-                slideIndex = 4;
+                slideIndex = 3;
                 break;
             case 'main-academy':
-                slideIndex = 5;
+                slideIndex = 4;
                 break;
             case 'main-brandExp':
-                slideIndex = 6;
+                slideIndex = 5;
                 break;
             case 'main-videoProd':
-                slideIndex = 7;
+                slideIndex = 6;
                 break;
         }
         // console.log(slideIndex);
@@ -125,7 +122,7 @@
         var footerBg = document.querySelector('.footer');
         switch (data) {
             case 'main-branding':
-                footerBg.style.backgroundImage = "url(" + footer_images['main-academy']+ ")";
+                footerBg.style.backgroundImage = "url(" + footer_images['main-branding']+ ")";
                 break;
             case 'main-digital':
                 footerBg.style.backgroundImage = "url(" + footer_images['main-digital'] + ")";
