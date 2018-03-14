@@ -27,7 +27,9 @@
     if (hashPage) {
         transitionTabState(hashPage);
     } else {
-        setDefaultState()
+        if (document.querySelector('.main-tab__nav')) {
+            setDefaultState()
+        }
     }
 
     function setDefaultState() {

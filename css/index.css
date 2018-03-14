@@ -875,12 +875,12 @@ template {
     max-width: 1220px;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .header__about-us {
     margin-right: 15px;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .header__top {
     top: 25px;
   }
@@ -985,7 +985,7 @@ template {
     margin: 95px 0 95px 0;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .our-clients {
     width: auto;
     padding-top: 0;
@@ -1016,6 +1016,9 @@ template {
     font-size: 20px;
     margin: 0 0 20px 0;
     color: #3C3C3C;
+  }
+  .our-clients__list {
+    margin: -440px -64%;
   }
   .our-clients__list div {
     width: -webkit-calc(33.33333333%);
@@ -1109,7 +1112,7 @@ template {
     font-size: 30px;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .feedback__title {
     font-size: 19px;
     color: #3C3C3C;
@@ -1284,7 +1287,7 @@ template {
     padding: 63px 0 30px 0;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .footer h4 {
     margin-bottom: 25px;
   }
@@ -1307,7 +1310,7 @@ template {
     text-align: center;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .footer {
     padding-top: 50px;
   }
@@ -1424,7 +1427,7 @@ template {
     padding-left: 5px;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .main-tab__nav {
     padding-bottom: 5px;
     margin: 0;
@@ -1511,14 +1514,14 @@ template {
     font-size: 17px;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .services__items {
     -webkit-align-self: self-start;
     -ms-flex-item-align: self-start;
     align-self: self-start;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .services {
     width: 90%;
     padding: 33px 0 24px 0;
@@ -1644,7 +1647,7 @@ template {
     padding-top: 52px;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .our-works {
     width: 95%;
     margin: 0 auto;
@@ -1973,7 +1976,7 @@ template {
     left: 4px;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .case-tab {
     margin: 0;
     padding: 115px 0 0 0;
@@ -2111,7 +2114,7 @@ template {
 .case-content_active {
   display: block;
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .case-nav {
     padding: 0 0 30px 0;
     -webkit-transform: scale(0.6);
@@ -2317,7 +2320,7 @@ template {
     color: #313131;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .case-banner {
     overflow: hidden;
   }
@@ -2439,7 +2442,7 @@ template {
     padding: 125px 0 130px 0;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .case-video {
     overflow: hidden;
   }
@@ -2625,7 +2628,7 @@ template {
     margin: 0 0 17px 0;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .case-main-task h2 {
     margin-bottom: 12px;
     font-size: 25px;
@@ -3118,7 +3121,7 @@ template {
     margin-top: 60px;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .digital-marketing_avtodok {
     overflow: hidden;
   }
@@ -3200,12 +3203,28 @@ template {
 .case-media-advertising_avtodok .case-media-advertising__view-pc {
   width: 53%;
 }
-.case-media-advertising_avtodok .case-media-advertising__view-pc img {
-  width: 100%;
-  max-width: 652px;
-  min-width: 450px;
+.case-media-advertising_avtodok .case-media-advertising__slider {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  max-width: 644px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  border-style: solid;
+  border-width: 21px 73px 44px 73px;
+  -webkit-border-image: url(../images/cases/pc-window-1093md.png) 33 127 71 127 stretch;
+  -o-border-image: url(../images/cases/pc-window-1093md.png) 33 127 71 127 stretch;
+  border-image: url(../images/cases/pc-window-1093md.png) 33 127 71 127 fill stretch;
+}
+.case-media-advertising_avtodok .case-media-advertising__slider img {
+  height: auto;
+}
+.case-media-advertising_avtodok .case-media-advertising__slider .slick-dots {
+  bottom: -75px;
+  left: 0;
+}
+.case-media-advertising_avtodok .case-media-advertising__slider .slick-dots button:before {
+  font-size: 9px;
 }
 .case-media-advertising_avtodok .case-media-advertising__row_mobile {
   margin-bottom: 0;
@@ -3226,18 +3245,6 @@ template {
 .case-media-advertising_avtodok .case-media-advertising__tags {
   color: #5190a2;
   margin: 41px 0 0 0;
-}
-.case-media-advertising_avtodok .case-media-advertising__view-pc {
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-}
-.case-media-advertising_avtodok .case-media-advertising__view-pc img {
-  border-style: solid;
-  border-width: 20px 78px 48px 78px;
-  -webkit-border-image: url(../images/cases/pc-window-1093md.png) 28 120 64 120 stretch;
-  -o-border-image: url(../images/cases/pc-window-1093md.png) 28 120 64 120 stretch;
-  border-image: url(../images/cases/pc-window-1093md.png) 28 120 64 120 fill stretch;
 }
 .case-media-advertising_avtodok .case-media-advertising__view-mobile {
   width: 35%;
@@ -3262,7 +3269,7 @@ template {
     padding: 123px 0 123px 0;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .case-media-advertising_avtodok {
     padding-top: 40px;
     padding-bottom: 67px;
@@ -3312,10 +3319,6 @@ template {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
-  }
-  .case-media-advertising_avtodok .case-media-advertising__view-pc img {
-    max-width: none;
-    border-width: 20px 95px 31px 95px;
   }
   .case-media-advertising_avtodok .case-media-advertising__row_first {
     margin-bottom: 50px;
@@ -3440,9 +3443,6 @@ template {
     margin-left: -300px;
     width: 650px;
   }
-  .case-media-advertising_avtodok .case-media-advertising__row_first .case-media-advertising__view-pc img {
-    min-width: 0;
-  }
   .case-media-advertising_avtodok .case-media-advertising__row_second .case-media-advertising__description {
     margin-bottom: 10px;
   }
@@ -3454,9 +3454,6 @@ template {
     max-width: 580px;
     margin-right: -300px;
     width: 650px;
-  }
-  .case-media-advertising_avtodok .case-media-advertising__row_second .case-media-advertising__view-pc img {
-    min-width: 0;
   }
   .case-media-advertising_avtodok .case-media-advertising__row_mobile {
     -webkit-flex-wrap: wrap;
@@ -3864,7 +3861,7 @@ template {
     font-size: 14px;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .case-advertising-result_inoton h2 {
     max-width: none;
     margin: 60px 0 30px 0;
@@ -4032,7 +4029,7 @@ template {
 .adv-con__view {
   width: 55%;
 }
-.adv-con__view img {
+.adv-con__slider {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   max-width: 644px;
@@ -4041,9 +4038,19 @@ template {
   display: block;
   border-style: solid;
   border-width: 21px 73px 44px 73px;
-  -webkit-border-image: url(../images/cases/pc-window-1093md.png) 33 130 74 130 stretch;
-  -o-border-image: url(../images/cases/pc-window-1093md.png) 33 130 74 130 stretch;
-  border-image: url(../images/cases/pc-window-1093md.png) 33 130 74 130 fill stretch;
+  -webkit-border-image: url(../images/cases/pc-window-1093md.png) 33 127 71 127 stretch;
+  -o-border-image: url(../images/cases/pc-window-1093md.png) 33 127 71 127 stretch;
+  border-image: url(../images/cases/pc-window-1093md.png) 33 127 71 127 fill stretch;
+}
+.adv-con__slider img {
+  height: auto;
+}
+.adv-con__slider .slick-dots {
+  bottom: -75px;
+  left: 0;
+}
+.adv-con__slider .slick-dots button:before {
+  font-size: 9px;
 }
 .advertising-networks {
   display: -webkit-box;
@@ -4149,6 +4156,23 @@ template {
 .social-adv-format__slider .slick-dots li button:before {
   font-size: 12px;
 }
+.social-adv-format__slider-mobile {
+  width: 195px;
+  max-width: 1330px;
+  margin: 0 auto 0 auto;
+  display: block;
+  border-style: solid;
+  border-width: 48px 13px 50px 13px;
+  -webkit-border-image: url(../images/cases/window-mobile-white.png) 56 12 51 13 stretch;
+  -o-border-image: url(../images/cases/window-mobile-white.png) 56 12 51 13 stretch;
+  border-image: url(../images/cases/window-mobile-white.png) 56 12 51 13 fill stretch;
+}
+.social-adv-format__slider-mobile .slick-dots {
+  bottom: -95px;
+}
+.social-adv-format__slider-mobile .slick-dots button:before {
+  font-size: 10px;
+}
 .social-adv-format__img {
   display: block;
   margin: 0 auto;
@@ -4157,7 +4181,6 @@ template {
   .social-adv-format__slider {
     max-width: 1091px;
     width: 90%;
-    margin-bottom: 10px;
     border-width: 36px 139px 71px 139px;
   }
 }
@@ -4520,7 +4543,7 @@ template {
 .case-main-buyers .case-main-buyers__pre-price {
   font-size: 32px;
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .case-main-buyers {
     margin-bottom: 62px;
   }
@@ -4664,7 +4687,7 @@ template {
   font-size: 25.5px;
   color: #2a2a2a;
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .case-adv-optimization {
     padding-bottom: 62px;
   }
@@ -4959,9 +4982,9 @@ template {
   display: block;
   border-style: solid;
   border-width: 48px 13px 50px 13px;
-  -webkit-border-image: url(../images/cases/window-mobile-white.png) 61 13 57 13 stretch;
-  -o-border-image: url(../images/cases/window-mobile-white.png) 61 13 57 13 stretch;
-  border-image: url(../images/cases/window-mobile-white.png) 61 13 57 13 fill stretch;
+  -webkit-border-image: url(../images/cases/window-mobile-white.png) 56 12 51 13 stretch;
+  -o-border-image: url(../images/cases/window-mobile-white.png) 56 12 51 13 stretch;
+  border-image: url(../images/cases/window-mobile-white.png) 56 12 51 13 fill stretch;
 }
 .contextual-advertising__slider-mobile .slick-dots {
   bottom: -95px;
@@ -5005,9 +5028,20 @@ template {
   width: 100%;
   height: auto;
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .case-branding__logo {
     margin: -65px 0 0 0;
+  }
+}
+@media all and (max-width: 480px) {
+  .case-branding__logo_mobelwerk img {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    margin-left: -50px;
+  }
+  .case-branding__logo-helper {
+    height: 200px;
   }
 }
 .case-video-production__video-player {
@@ -5016,10 +5050,16 @@ template {
   display: block;
   margin: 0 auto;
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .case-video-production__video-player {
     width: 560px;
     height: 315px;
+  }
+}
+@media all and (max-width: 480px) {
+  .case-video-production__video-player {
+    width: 100%;
+    height: 256px;
   }
 }
 html,
@@ -5147,7 +5187,7 @@ body {
     font-size: 30px;
   }
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .other-projects {
     padding: 80px 0 80px 0;
   }

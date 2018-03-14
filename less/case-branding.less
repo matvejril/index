@@ -41,14 +41,27 @@
   }
 }
 
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1200px) {
   .case-branding {
     &__logo {
       margin: -65px 0  0 0;
     }
+  }
+}
 
+@media all and (max-width: 480px) {
+  .case-branding {
+    //&__logo {
+    //  ;
+    //}
+    &__logo_mobelwerk {
+      img {
+        transform: scale(0.7);
+        margin-left: -50px;
+      }
+    }
     &__logo-helper {
-
+      height: 200px
     }
   }
 }
