@@ -48,3 +48,31 @@
         }
     }
 }
+
+@media all and (max-width: 1200px) {
+    .person-card {
+        width: calc(~'100%/3');
+        &__description {
+            h5 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    .person-card {
+        width: calc(~'100%/2');
+        &__description {
+            h5 {
+                font-size: 17px;
+            }
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}

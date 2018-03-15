@@ -909,7 +909,7 @@ template {
     margin-left: 12px;
   }
   .header__content {
-    top: 39%;
+    top: 55%;
   }
   .header__slogan {
     font-size: 15px;
@@ -963,7 +963,7 @@ template {
   width: calc(100%/5);
   min-width: 185px;
   text-align: center;
-  margin: 90px 0 90px 0;
+  margin: 60px 0 60px 0;
 }
 .our-clients__list img {
   display: inline;
@@ -975,6 +975,7 @@ template {
   }
   .our-clients__title {
     font-size: 30px;
+    margin-bottom: 115px;
   }
   .our-clients__list {
     width: auto;
@@ -984,7 +985,7 @@ template {
     transform: scale(0.7);
   }
   .our-clients__list div {
-    margin: 95px 0 95px 0;
+    margin: 55px 0 55px 0;
   }
 }
 @media all and (max-width: 1200px) {
@@ -996,7 +997,7 @@ template {
   }
   .our-clients__title {
     font-size: 20px;
-    margin: 0 0 20px 0;
+    margin: 0 0 25px 0;
     color: #3C3C3C;
   }
   .our-clients__list {
@@ -1555,7 +1556,7 @@ template {
     max-width: none;
     max-height: none;
     text-align: center;
-    padding-right: 10px;
+    padding-right: 25px;
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
@@ -1817,6 +1818,18 @@ template {
     font-size: 20px;
   }
 }
+@media all and (max-width: 1200px) {
+  .greeting {
+    padding: 55px 0 15px 0;
+  }
+  .greeting h3 {
+    font-size: 22px;
+    margin-bottom: 50px;
+  }
+  .greeting li {
+    font-size: 17px;
+  }
+}
 .acquaintance {
   padding: 100px 0 192px 0;
 }
@@ -1845,6 +1858,20 @@ template {
 @media all and (max-width: 1800px) {
   .acquaintance h3 {
     font-size: 30px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .acquaintance {
+    padding: 70px 0 100px 0;
+  }
+  .acquaintance h3 {
+    margin: 0 0 60px 0;
+    font-size: 22px;
+    text-align: center;
+  }
+  .acquaintance__list {
+    width: 100%;
+    margin: 0 auto;
   }
 }
 .person-card {
@@ -1900,6 +1927,30 @@ template {
   -o-transition: all .5s linear;
   -moz-transition: all .5s linear;
   -webkit-transition: all .5s linear;
+}
+@media all and (max-width: 1200px) {
+  .person-card {
+    width: -webkit-calc(100%/3);
+    width: calc(100%/3);
+  }
+  .person-card__description h5 {
+    font-size: 20px;
+  }
+  .person-card__description p {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 768px) {
+  .person-card {
+    width: -webkit-calc(100%/2);
+    width: calc(100%/2);
+  }
+  .person-card__description h5 {
+    font-size: 17px;
+  }
+  .person-card__description p {
+    font-size: 12px;
+  }
 }
 .case-tab {
   list-style-type: none;
