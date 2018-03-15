@@ -3505,8 +3505,8 @@ template {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.case-banners_zhukovka .case-banners__list div {
-  width: 240px;
+.case-banners_zhukovka .case-banners__list iframe {
+  border: none;
 }
 .case-social-network_zhukovka h4 {
   margin: 0 0 66px 0;
