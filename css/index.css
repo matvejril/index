@@ -730,7 +730,8 @@ template {
 }
 .header {
   position: relative;
-  display: none;
+  display: block;
+  visibility: hidden;
 }
 .header__top {
   position: absolute;
@@ -787,7 +788,8 @@ template {
   margin-left: 10px;
 }
 .header_about-us {
-  display: none;
+  display: block;
+  visibility: hidden;
 }
 .header_about-us .header__logo {
   margin-top: 5px;
@@ -5245,6 +5247,9 @@ body {
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+}
+.informing-za__banners iframe {
+  border: none;
 }
 .informing-za__pc {
   width: 58%;

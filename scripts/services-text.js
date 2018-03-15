@@ -51,9 +51,10 @@
                 default:
             }
         }
-        if ($(window).width() <= 1280) {
+        if ($(window).width() <= 1200) {
             for (var e = 0; e < serviceList.length; e++) {
                 serviceList[e].style.width = 100 + '%';
+                serviceList[e].style.justifyContent = 'center';
             }
         }
     }

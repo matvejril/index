@@ -21,7 +21,6 @@
     inputPhone.addEventListener("keydown", showButtonForm, false);
     formButton.addEventListener("click", sendData, false);
 
-
     function showPhoneInput(e) {
         if (e.keyCode) {
             inputPhone.style.visibility = "visible";

@@ -1,22 +1,37 @@
 (function() {
     // Инициализация слика
     var slider = $('.header-slider');
+
     slider.on('init', function(event, slick, direction){
         var header = $('.header')[0];
-        header.style.display = 'block';
+        header.style.visibility = 'visible';
+    });
+    slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+        slider.slick('slickSetOption', 'speed', '300');
     });
     slider.slick({
         arrows: false,
         draggable: false,
         swipe: false,
-        speed: 300
+        speed: 0
     });
-
 
     var tabLinks = document.querySelectorAll('.main-tab__nav-item');
     var tabContent = document.querySelectorAll('.main-tab__content');
 
     var hashPage = window.location.hash;
+
+
+    function goToServices() {
+        var tabContent = document.querySelector('.main-tab__content');
+        if (tabContent) {
+            // var y = tabContent.clientY;
+            // console.log(y);
+            var top = document.querySelector('.header').getBoundingClientRect().height;
+            console.log(top);
+            window.scrollTo(0, top);
+        }
+    }
 
     // Навешивание событий на навигацию
     for (var i = 0; i < tabLinks.length; i++) {
@@ -25,6 +40,11 @@
 
     // Проверка хеша
     if (hashPage) {
+        var externalTransition = localStorage.getItem('externalTransition');
+        if (externalTransition) {
+            goToServices();
+            localStorage.removeItem('externalTransition');
+        }
         transitionTabState(hashPage);
     } else {
         if (document.querySelector('.main-tab__nav')) {
@@ -43,7 +63,6 @@
 
     function transitionTabState(hashPage) {
         var getTabStateValue = hashPage.replace("#","main-");
-        // console.log(getTabStateValue);
         for (var m = 0; m < tabLinks.length; m++) {
             tabLinks[m].classList.remove('main-tab__nav-item_active');
             var tabOverlapData = tabLinks[m].getAttribute('data-tab');
@@ -115,7 +134,6 @@
                 slideIndex = 6;
                 break;
         }
-        // console.log(slideIndex);
         slider.slick('slickGoTo', slideIndex);
     }
 

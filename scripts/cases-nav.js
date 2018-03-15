@@ -11,7 +11,6 @@
     function changeTab() {
         var tabClick = this;
         var tabClickData = tabClick.getAttribute('data-nav');
-        console.log(tabClickData);
         if (!tabClick.classList.contains('case-nav__item_active')) {
             for (var i = 0; i < tabLinks.length; i++) {
                 tabLinks[i].classList.remove('case-nav__item_active');
