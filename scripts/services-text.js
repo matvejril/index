@@ -39,8 +39,6 @@
                         serviceItems[i].children[z].style.margin = '0 auto';
                         var li = serviceItems[i].children[0].children;
                         for (var m = 0; m < li.length; m++) {
-                            // console.log(li[m].innerHTML);
-                            // console.log(li[m].innerHTML.length);
                             if (li[m].innerHTML.length > 34) {
                                 serviceItems[i].children[z].style.width = '100%';
                                 serviceBlock[i].style.width = '60%';
@@ -62,9 +60,6 @@
     function resizeServicesSm () {
         for (var e = 0; e < serviceBlock.length; e++) {
             serviceBlock[e].style.width = 100 + '%';
-        }
-        for (var z = 0; z < serviceItems.length; z++) {
-            serviceItems[z].style.width = 100 + '%';
         }
         for (var i = 0; i < serviceList.length; i++) {
             serviceList[i].style.width = 100 + '%';

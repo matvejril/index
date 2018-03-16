@@ -108,19 +108,9 @@
         outline: none;
     }
 
-    &_zhukovka {
-        padding: 45px 0 30px 0;
-        background: none;
-        .header__top {
-            margin: 0;
-            a {
-                font-size: 20px;
-                color: #151515;
-            }
-        }
-        .header__logo {
-            margin-left: 0;
-        }
+    &_about-us {
+        //height: auto;
+        //max-height: none;
     }
 }
 
@@ -146,7 +136,6 @@
             line-height: 1.45;
             margin-left: 19px;
         }
-
         &_about-us {
             .header__logo {
                 margin-top: 5px;
@@ -197,6 +186,7 @@
     }
 }
 
+
 @media all and (max-width: 480px) {
     .header {
         &__top {
@@ -209,7 +199,7 @@
             }
         }
         &__content {
-            top: 55%;
+            top: 39%;
         }
         &__slogan {
             font-size: 15px;
@@ -228,6 +218,11 @@
                 height: 445px;
                 width: auto;
                 outline: none;
+            }
+        }
+        &_about-us {
+            .header__content {
+                top: 55%;
             }
         }
     }

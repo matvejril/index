@@ -8,7 +8,7 @@
     aboutUsSlider.slick({
         arrows: false,
         speed: 500,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000
     });
 }());

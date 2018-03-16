@@ -829,20 +829,6 @@ template {
   height: auto;
   outline: none;
 }
-.header-slide_zhukovka {
-  padding: 45px 0 30px 0;
-  background: none;
-}
-.header-slide_zhukovka .header__top {
-  margin: 0;
-}
-.header-slide_zhukovka .header__top a {
-  font-size: 20px;
-  color: #151515;
-}
-.header-slide_zhukovka .header__logo {
-  margin-left: 0;
-}
 @media all and (max-width: 1800px) {
   .header__top {
     top: 44px;
@@ -909,7 +895,7 @@ template {
     margin-left: 12px;
   }
   .header__content {
-    top: 55%;
+    top: 39%;
   }
   .header__slogan {
     font-size: 15px;
@@ -928,9 +914,12 @@ template {
     width: auto;
     outline: none;
   }
+  .header_about-us .header__content {
+    top: 55%;
+  }
 }
 .our-clients {
-  padding: 149px 0 60px 0;
+  padding: 150px 0 60px 0;
 }
 .our-clients__title {
   color: #848484;
@@ -963,7 +952,7 @@ template {
   width: calc(100%/5);
   min-width: 185px;
   text-align: center;
-  margin: 60px 0 60px 0;
+  margin: 40px 0 40px 0;
 }
 .our-clients__list img {
   display: inline;
@@ -972,6 +961,7 @@ template {
 @media all and (max-width: 1800px) {
   .our-clients {
     padding-top: 75px;
+    padding-bottom: 150px;
   }
   .our-clients__title {
     font-size: 30px;
@@ -983,9 +973,6 @@ template {
     -webkit-transform: scale(0.7);
     -ms-transform: scale(0.7);
     transform: scale(0.7);
-  }
-  .our-clients__list div {
-    margin: 55px 0 55px 0;
   }
 }
 @media all and (max-width: 1200px) {
@@ -1545,6 +1532,9 @@ template {
   .services__list {
     font-size: 13px;
   }
+  .services .services__items_digital {
+    margin: 0;
+  }
   .services .services__list_digital {
     width: auto;
     margin: 0;
@@ -1780,7 +1770,7 @@ template {
 .greeting {
   padding: 100px 0 105px 0;
 }
-.greeting h3 {
+.greeting h1 {
   margin: 0 0 137px 0;
   font-family: HelveticaNeueCyrMedium, sans-serif;
   color: #000000;
@@ -1810,7 +1800,7 @@ template {
   .greeting {
     padding: 70px 0 25px 0;
   }
-  .greeting h3 {
+  .greeting h1 {
     font-size: 30px;
     margin-bottom: 70px;
   }
@@ -1822,12 +1812,24 @@ template {
   .greeting {
     padding: 55px 0 15px 0;
   }
-  .greeting h3 {
+  .greeting h1 {
     font-size: 22px;
     margin-bottom: 50px;
   }
   .greeting li {
     font-size: 17px;
+  }
+}
+@media all and (max-width: 480px) {
+  .greeting {
+    padding-top: 30px;
+  }
+  .greeting h1 {
+    margin-bottom: 30px;
+  }
+  .greeting li {
+    font-size: 13px;
+    margin-bottom: 15px;
   }
 }
 .acquaintance {
@@ -1872,6 +1874,14 @@ template {
   .acquaintance__list {
     width: 100%;
     margin: 0 auto;
+  }
+}
+@media all and (max-width: 760px) {
+  .acquaintance {
+    padding: 40px 0 70px 0;
+  }
+  .acquaintance h3 {
+    margin-bottom: 40px;
   }
 }
 .person-card {
@@ -1933,23 +1943,18 @@ template {
     width: -webkit-calc(100%/3);
     width: calc(100%/3);
   }
-  .person-card__description h5 {
-    font-size: 20px;
-  }
-  .person-card__description p {
-    font-size: 15px;
-  }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 760px) {
   .person-card {
     width: -webkit-calc(100%/2);
     width: calc(100%/2);
   }
   .person-card__description h5 {
-    font-size: 17px;
+    font-size: 15px;
+    margin-bottom: 5px;
   }
   .person-card__description p {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 .case-tab {
@@ -2044,7 +2049,7 @@ template {
     left: 5px;
   }
 }
-@media all and (max-width: 420px) {
+@media all and (max-width: 480px) {
   .case-tab {
     padding-top: 110px;
   }
@@ -2721,7 +2726,7 @@ template {
     line-height: 1.35;
   }
 }
-@media all and (max-width: 420px) {
+@media all and (max-width: 480px) {
   .case-main-task {
     padding-bottom: 62px;
   }
@@ -5109,7 +5114,7 @@ template {
     height: 315px;
   }
 }
-@media all and (max-width: 480px) {
+@media all and (max-width: 760px) {
   .case-video-production__video-player {
     width: 100%;
     height: 256px;
