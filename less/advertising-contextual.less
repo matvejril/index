@@ -38,6 +38,32 @@
     img {
       height: auto;
     }
+
+    .slick-prev {
+      height: auto;
+      width: auto;
+      left: -75px;
+      &:before {
+        content: url("../images/slider-icons/arr-l.png");
+      }
+    }
+    .slick-next {
+      height: auto;
+      width: auto;
+      right: -75px;
+      &:before {
+        content: url("../images/slider-icons/arr-r.png");
+      }
+    }
+    .slick-arrow {
+      top: 48%;
+
+      &:before {
+        color: black;
+        font-size: 45px;
+      }
+    }
+
     .slick-dots {
       bottom: -75px;
       left: 0;
