@@ -3199,7 +3199,7 @@ template {
     margin: 0 0 13px 0;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 760px) {
   .digital-marketing_avtodok .digital-marketing__bg {
     display: none;
   }
@@ -5336,7 +5336,7 @@ body {
 .other-projects__item {
   display: inline-block;
   padding: 0 15px;
-  margin: 0 5px;
+  margin: 0 5px 15px 5px;
 }
 .other-projects__item:hover {
   cursor: pointer;
