@@ -1,5 +1,6 @@
 .case-advertising-result {
     position: relative;
+    overflow: hidden;
     .container {
         position: absolute;
         top: 0;
@@ -409,7 +410,76 @@
                 margin: 0;
             }
         }
+        &_pichugovo {
+            h2 {
+                font-size: 25px;
+                max-width: 350px;
+                margin-bottom: 30px;
+                margin-top: 43px;
+            }
+            .case-advertising-result__pretext {
+                font-size: 20px;
+            }
+            .case-advertising-result__value {
+                font-size: 30px;
+            }
+            .case-advertising-result__description {
+                font-size: 16px;
+            }
+            .case-advertising-result__list {
+                max-width: 72%;
+                li {
+                    margin-bottom: 15px;
+                }
+            }
+            .case-advertising-result__bg {
+                min-height: 440px;
+            }
+        }
+        &_zhukovka {
+            h2 {
+                padding-left: 10px;
+                margin-top: 43px;
+                margin-bottom: 55px;
+                font-size: 25px;
+            }
+            .case-advertising-result__list {
+                padding-left: 10px;
+                li {
+                    margin-bottom: 25px;
+                }
+            }
+            .case-advertising-result__pretext {
+                display: inline;
+                font-size: 23px;
+            }
+            .case-advertising-result__value {
+                font-size: 32px;
+                display: inline;
+            }
+            .case-advertising-result__description {
+                display: inline;
+            }
+            .case-advertising-result__bg {
+                //min-height: 470px;
+                //width: auto;
+                //min-height: 470px;
+                //float: right;
+            }
+        }
 
+    }
+}
+
+@media all and (max-width: 767px) {
+    .case-advertising-result {
+        &_zhukovka {
+            .case-advertising-result__bg {
+                width: auto;
+                height: 523px;
+                float: right;
+            }
+        }
     }
 }
 
@@ -443,6 +513,25 @@
                     margin: 0 0 15px 0;
                     &:last-child {
                         margin: 0;
+                    }
+                }
+            }
+        }
+        &_pichugovo {
+            .case-advertising-result__bg {
+                width: auto;
+                height: 580px;
+            }
+            .case-advertising-result__list {
+                //width: 100%;
+                max-width: none;
+                li {
+                    margin-bottom: 33px;
+                    &:nth-child(2) {
+                        .case-advertising-result__pretext {
+                            //max-width: ;
+                        }
+                        width: 80%;
                     }
                 }
             }

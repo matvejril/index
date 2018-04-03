@@ -13,7 +13,6 @@
         autoplaySpeed: 4000
     });
 
-
     var socialNetworkSlider = $('.case-social-network__slider');
     if (socialNetworkSlider) {
         socialNetworkSlider.slick({
@@ -86,6 +85,27 @@
         });
     }
 
-
+    var caseBannersSlider = $('.case-banners__slider');
+    if (caseBannersSlider) {
+        caseBannersSlider.slick({
+            arrows: false,
+            // centerMode: true,
+            dots: false,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        arrows: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                }
+            ]
+        });
+    }
 
 }());

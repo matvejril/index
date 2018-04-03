@@ -20,6 +20,9 @@
       img {
         height: auto;
       }
+
+
+
       .slick-next {
         height: auto;
         width: auto;
@@ -66,6 +69,57 @@
       max-width: 1091px;
       width: 90%;
       border-width: 36px 139px 71px 139px;
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .case-social-network {
+    &_zhukovka {
+      h4 {
+        font-size: 20px;
+        padding-left: 5px;
+        margin-bottom: 43px;
+      }
+      .case-social-network__slider {
+        //margin: 0 auto;
+        //display: block;
+        //border-style: solid;
+        //-webkit-border-image: url(../images/cases/pc-window-1093md.png) 33 127 71 127 stretch;
+        //-o-border-image: url(../images/cases/pc-window-1093md.png) 33 127 74 127 stretch;
+        //border-image: url(../images/cases/pc-window-1093md.png) 33 127 71 127 fill stretch;
+        //width: 60%;
+        //max-width: 762px;
+        //border-width: 18px 75px 40px 75px;
+
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        max-width: 620px;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        border-style: solid;
+        border-width: 21px 73px 44px 73px;
+        -webkit-border-image: url(../images/cases/pc-window-1093md.png) 33 127 71 127 stretch;
+        -o-border-image: url(../images/cases/pc-window-1093md.png) 33 127 71 127 stretch;
+        border-image: url(../images/cases/pc-window-1093md.png) 33 127 71 127 fill stretch;
+
+
+        .slick-next {
+          right: -65px;
+        }
+        .slick-prev {
+          left: -65px;
+        }
+        .slick-arrow {
+          top: 48%;
+        }
+        .slick-dots {
+          bottom: -85px;
+        }
+
+
+      }
     }
   }
 }

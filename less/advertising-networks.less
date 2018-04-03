@@ -64,6 +64,59 @@
         font-size: 45px;
       }
     }
+  }
+}
 
+@media all and (max-width: 1200px) {
+  .advertising-networks {
+    flex-wrap: wrap;
+    &__caption {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &__view {
+      width: 100%;
+    }
+    &__slider {
+      width: 87%;
+    }
+    &__queries {
+      .text-size-10 {
+        font-size: 11px;
+      }
+      .text-size-14 {
+        font-size: 16px;
+      }
+      .text-size-9 {
+        font-size: 11px;
+      }
+      .text-size-8 {
+        font-size: 9px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .advertising-networks {
+    &__caption {
+      margin-bottom: 48px;
+    }
+    &__slider {
+      width: 100%;
+      border-width: 11px 40px 25px 40px;
+      -webkit-border-image: url(../images/cases/pc-window-1093md.png) 33 127 71 127 stretch;
+      -o-border-image: url(../images/cases/pc-window-1093md.png) 33 127 71 127 stretch;
+      border-image: url(../images/cases/pc-window-1093md.png) 33 127 71 127 fill stretch;
+      .slick-next {
+        right: -40px;
+      }
+      .slick-prev {
+        left: -40px;
+      }
+      .slick-dots {
+        bottom: -65px;
+      }
+    }
   }
 }

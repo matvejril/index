@@ -1,5 +1,6 @@
 .digital-marketing {
     position: relative;
+    overflow: hidden;
     .container {
         position: absolute;
         top: 0;
@@ -272,14 +273,14 @@
         &_pichugovo {
             overflow: hidden;
             h2 {
-                font-size: 22px;
+                font-size: 26px;
                 margin-top: 45px;
                 margin-bottom: 16px;
             }
             p {
-                width: 85%;
+                //width: 85%;
                 font-size: 13px;
-                margin: 0 0 64px 9px;
+                margin: 0 0 53px 9px;
                 line-height: 1.35;
             }
             .digital-marketing__directions {
@@ -296,6 +297,28 @@
                 }
             }
         }
+        &_zhukovka {
+            margin-bottom: 0;
+            h2 {
+                margin-top: 40px;
+                font-size: 25px;
+                padding-left: 5px;
+                margin-bottom: 12px;
+            }
+            p {
+                max-width: 85%;
+                padding-left: 8px;
+                margin-bottom: 16px;
+                font-size: 12px;
+            }
+            .digital-marketing__bg {
+                position: relative;
+                left: 50%;
+                width: auto;
+                height: 500px;
+                transform: translateX(-50%);
+            }
+        }
     }
 }
 
@@ -303,12 +326,25 @@
     .digital-marketing {
         &_avtodok {
             .digital-marketing__bg {
-                display: none;
+                width: auto;
+                height: 530px;
+                transform: translateX(-50%);
+                position: relative;
+                left: 50%;
             }
-            .digital-marketing__bg-sm {
-                display: block;
-                height: 650px;
-                width: 100%;
+            //.digital-marketing__bg-sm {
+            //    display: block;
+            //    height: 650px;
+            //    width: 100%;
+            //}
+        }
+        &_pichugovo {
+            .digital-marketing__bg {
+                width: auto;
+                height: 530px;
+                transform: translateX(-50%);
+                position: relative;
+                left: 50%;
             }
         }
     }
@@ -323,6 +359,49 @@
             }
             .digital-marketing__bg {
                 transform: translate(-50%, 0);
+            }
+        }
+        &_pichugovo {
+            h2 {
+                margin-top: 45px;
+                margin-bottom: 12px;
+            }
+            p {
+                width: 100%;
+                margin: 0 0 53px 0;
+            }
+            .digital-marketing__directions {
+                width: 96%;
+                flex-wrap: wrap;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+            .digital-marketing__directions-item {
+                width: 100%;
+                //margin-bottom: 35px;
+                position: relative;
+                margin: 0 0 35px 0;
+                h3 {
+                    max-width: 180px;
+                    text-align: left;
+                    font-size: 23px;
+                    margin-bottom: 15px;
+                }
+                p {
+                    //width: auto;
+                    //display: block;
+                    text-align: left;
+                    //float: left;
+                }
+                img {
+                    position: absolute;
+                    right: 5%;
+                    top: 0;
+                    transform: scale(0.7);
+                    //float: right;
+                }
+            }
+            .digital-marketing__bg {
             }
         }
     }

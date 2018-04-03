@@ -36,3 +36,33 @@
     margin-bottom: 113px;
   }
 }
+
+@media all and (max-width: 1200px) {
+  .social-adv-collection {
+    width: 89%;
+    margin: 0 auto 5px auto;
+    &__logo {
+      transform: scale(0.8);
+    }
+    &__list {
+      li {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .social-adv-collection {
+    flex-wrap: wrap;
+    &__item {
+      width: calc(~'100% / 2');
+      margin-bottom: 25px;
+    }
+    &__item_vk {
+      img {
+        margin-top: -9px;
+      }
+    }
+  }
+}
