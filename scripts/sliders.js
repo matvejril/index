@@ -89,7 +89,6 @@
     if (caseBannersSlider) {
         caseBannersSlider.slick({
             arrows: false,
-            // centerMode: true,
             dots: false,
             slidesToShow: 3,
             slidesToScroll: 3,
@@ -98,6 +97,16 @@
                     breakpoint: 1200,
                     settings: {
                         arrows: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
                         slidesToShow: 1,
                         slidesToScroll: 1,
                         infinite: true,

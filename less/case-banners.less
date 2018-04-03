@@ -22,6 +22,7 @@
       }
       .case-banners__slider-item {
         text-align: center;
+        height: auto;
       }
       .slick-next {
         height: auto;
@@ -80,6 +81,24 @@
         width: 300px;
       }
       .case-banners__slider-item {
+      }
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .case-banners {
+    &_zhukovka {
+      h4 {
+        padding-left: 0;
+      }
+      .case-banners__slider {
+        .slick-next {
+          display: none;
+        }
+        .slick-prev {
+          display: none;
+        }
       }
     }
   }

@@ -2506,6 +2506,9 @@ template {
   .case-banner_pichugovo .case-banner__description {
     margin-left: 5px;
   }
+  .case-banner_zhukovka {
+    padding-bottom: 30px;
+  }
 }
 .case-video video {
   width: 47.5%;
@@ -2594,6 +2597,9 @@ template {
   .case-video video {
     width: 70%;
     border-width: 11px 40px 25px 40px;
+  }
+  .case-video_zhukovka {
+    padding-bottom: 38px;
   }
 }
 .case-main-task {
@@ -2851,6 +2857,18 @@ template {
     margin-bottom: 17px;
     line-height: 1.35;
   }
+  .case-main-task_zhukovka {
+    padding-bottom: 18px;
+    width: 100%;
+    max-width: none;
+    padding-left: 0;
+  }
+  .case-main-task_zhukovka .case-main-task__description {
+    margin-bottom: 32px;
+  }
+  .case-main-task .case-main-task__steps li {
+    margin-bottom: 17px;
+  }
 }
 .case-landing-page video {
   width: 69.5%;
@@ -3067,6 +3085,15 @@ template {
     padding-bottom: 58px;
   }
   .case-landing-page .case-video video {
+    width: 68%;
+    max-width: 762px;
+    border-width: 12px 48px 28px 48px;
+  }
+  .case-landing-page_zhukovka h2 {
+    padding-left: 0;
+    margin-bottom: 28px;
+  }
+  .case-landing-page_zhukovka video {
     width: 68%;
     max-width: 762px;
     border-width: 12px 48px 28px 48px;
@@ -3375,7 +3402,7 @@ template {
     position: relative;
     left: 50%;
     width: auto;
-    height: 500px;
+    height: 657px;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -3447,6 +3474,16 @@ template {
     -webkit-transform: scale(0.7);
     -ms-transform: scale(0.7);
     transform: scale(0.7);
+  }
+  .digital-marketing_zhukovka h2 {
+    margin-top: 43px;
+    padding-left: 0;
+  }
+  .digital-marketing_zhukovka p {
+    padding-left: 0;
+  }
+  .digital-marketing_zhukovka .digital-marketing__bg {
+    height: 730px;
   }
 }
 .case-media-advertising {
@@ -3807,6 +3844,9 @@ template {
   .case-media-advertising_avtodok .adv-con__queries {
     width: 100%;
   }
+  .case-media-advertising_zhukovka h3 {
+    padding-left: 0;
+  }
 }
 .case-banners_zhukovka {
   margin-bottom: 112px;
@@ -3829,6 +3869,7 @@ template {
 }
 .case-banners_zhukovka .case-banners__slider .case-banners__slider-item {
   text-align: center;
+  height: auto;
 }
 .case-banners_zhukovka .case-banners__slider .slick-next {
   height: auto;
@@ -3875,6 +3916,17 @@ template {
   }
   .case-banners_zhukovka .case-banners__slider {
     width: 300px;
+  }
+}
+@media all and (max-width: 480px) {
+  .case-banners_zhukovka h4 {
+    padding-left: 0;
+  }
+  .case-banners_zhukovka .case-banners__slider .slick-next {
+    display: none;
+  }
+  .case-banners_zhukovka .case-banners__slider .slick-prev {
+    display: none;
   }
 }
 .case-social-network_zhukovka h4 {
@@ -3948,7 +4000,7 @@ template {
     box-sizing: border-box;
     max-width: 620px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 85px auto;
     display: block;
     border-style: solid;
     border-width: 21px 73px 44px 73px;
@@ -3967,6 +4019,27 @@ template {
   }
   .case-social-network_zhukovka .case-social-network__slider .slick-dots {
     bottom: -85px;
+  }
+}
+@media all and (max-width: 480px) {
+  .case-social-network_zhukovka h3 {
+    padding-left: 0;
+  }
+  .case-social-network_zhukovka .case-social-network__slider {
+    width: 100%;
+    border-width: 11px 40px 25px 40px;
+    -webkit-border-image: url(../images/cases/pc-window-1093md.png) 33 127 71 127 stretch;
+    -o-border-image: url(../images/cases/pc-window-1093md.png) 33 127 71 127 stretch;
+    border-image: url(../images/cases/pc-window-1093md.png) 33 127 71 127 fill stretch;
+  }
+  .case-social-network_zhukovka .case-social-network__slider .slick-next {
+    right: -40px;
+  }
+  .case-social-network_zhukovka .case-social-network__slider .slick-prev {
+    left: -40px;
+  }
+  .case-social-network_zhukovka .case-social-network__slider .slick-dots {
+    bottom: -65px;
   }
 }
 .case-advertising-result {
@@ -4463,6 +4536,23 @@ template {
   .case-advertising-result_pichugovo .case-advertising-result__list li:nth-child(2) {
     width: 80%;
   }
+  .case-advertising-result_zhukovka h2 {
+    padding-left: 0;
+    margin-top: 52px;
+    margin-bottom: 50px;
+  }
+  .case-advertising-result_zhukovka .case-advertising-result__list {
+    padding-left: 0;
+  }
+  .case-advertising-result_zhukovka .case-advertising-result__list li {
+    margin-bottom: 35px;
+  }
+  .case-advertising-result_zhukovka .case-advertising-result__description {
+    font-size: 19px;
+  }
+  .case-advertising-result_zhukovka .case-advertising-result__bg {
+    height: 580px;
+  }
 }
 .adv-con {
   margin: 0 auto 137px 0;
@@ -4792,6 +4882,9 @@ template {
   -o-border-image: url(../images/cases/window-mobile-white.png) 56 12 54 13 stretch;
   border-image: url(../images/cases/window-mobile-white.png) 56 12 54 13 fill stretch;
 }
+.social-adv-format__slider-mobile img {
+  height: auto;
+}
 .social-adv-format__slider-mobile .slick-prev {
   height: auto;
   width: auto;
@@ -4835,6 +4928,7 @@ template {
 @media all and (max-width: 1200px) {
   .social-adv-format {
     padding-top: 43px;
+    padding-bottom: 20px;
   }
   .social-adv-format__title {
     font-size: 25px;
@@ -4843,7 +4937,7 @@ template {
   .social-adv-format__slider {
     width: 90%;
     border-width: 22px 80px 41px 80px;
-    margin-bottom: 100px;
+    margin-bottom: 35px;
   }
   .social-adv-format__slider .slick-dots {
     bottom: -75px;
@@ -4935,7 +5029,7 @@ template {
 @media all and (max-width: 1200px) {
   .social-adv-collection {
     width: 89%;
-    margin: 0 auto 5px auto;
+    margin: 0 auto 21px auto;
   }
   .social-adv-collection__logo {
     -webkit-transform: scale(0.8);
@@ -4978,7 +5072,7 @@ template {
 @media all and (max-width: 1200px) {
   .competitors-pichugovo {
     width: 80%;
-    padding: 45px 0 45px 0;
+    padding: 25px 0 45px 0;
   }
   .competitors-pichugovo p {
     margin: 0 0 16px 0;
